@@ -10,4 +10,3 @@ Para garantir que a nossa comunidade seja acolhedora para todos, leia e siga o n
 
 * Reportando bugs e sugerindo funcionalidades no [GitHub](https://github.com/Minhacps/votacidade/issues).
 * Discutindo tópicos no [Discord](https://discord.gg/HGrEDmz).
-* 
