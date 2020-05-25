@@ -2,7 +2,7 @@
 
 * [ ] Eu li e segui o [Guia de Contribuição](https://github.com/Minhacps/votacidade-site/blob/master/.github/CONTRIBUTING.md).
 * [ ] Eu li e segui o [Código de Conduta](https://github.com/Minhacps/votacidade-site/blob/master/.github/CODE_OF_CONDUCT.md).
-* [ ] Eu confirmei que não há outra [Pull Request](../pulls) para a mesma alteração.
+* [ ] Eu confirmei que não há outra [Pull Request](https://github.com/Minhacps/votacidade-site/pulls) para a mesma alteração.
 
 ## Issues relacionadas
 <!--
