@@ -1,15 +1,28 @@
-# votacidade-site
-Site do Vota Cidade 2020
+# Site do Vota Cidade.
 
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Iniciador padrão do Gatsby
-</h1>
+## Tecnologias
+
+- [Gatsby](https://www.gatsbyjs.org/)
+- [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default)
+  - Veja [como utilizar](.github/INSTALLING.md).
+
+## Repositórios relacionados
+
+- [Vota Cidade](https://github.com/Minhacps/votacidade)
+  - [Vota Cidade - Site](https://github.com/Minhacps/votacidade-site)
+  - [Vota Cidade - App](https://github.com/Minhacps/votacidade-app)
+
+## Contribuição
+
+Agradecemos por considerar contribuir com o Vota Cidade! Você encontra como fazê-lo em nosso [Guia de Contribuição](.github/CONTRIBUTING.md).
+
+## Licença
+
+O Vota Cidade é um software de código aberto licenciado sob a [Licença MIT](LICENSE.md).
+
+-----------
+
+# Iniciador padrão do Gatsby
 
 Comece seu projeto com este padrão padrão. Esse iniciador é fornecido com os principais arquivos de configuração do Gatsby, que você pode precisar para começar a funcionar em alta velocidade com o gerador de aplicativos em alta velocidade do React.
 
