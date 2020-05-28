@@ -1,4 +1,8 @@
-# Site do Vota Cidade.
+<h1 align="center">
+  Vota Cidade - Site
+</h1>
+
+Site do Vota Cidade.
 
 ## Tecnologias
 
