@@ -7,15 +7,15 @@
 
 # Iniciador padrão do Gatsby
 
-Comece seu projeto com este padrão padrão. Esse iniciador é fornecido com os principais arquivos de configuração do Gatsby, que você pode precisar para começar a funcionar em alta velocidade com o gerador de aplicativos em alta velocidade do React.
+Comece seu projeto com este padrão. Esse iniciador é fornecido com os principais arquivos de configuração do Gatsby, que você pode precisar para começar a funcionar em alta velocidade com o gerador de aplicativos em alta velocidade do React.
 
-PS - Para rodar o projeto é necessário ter o Node instalado em seu compotador.
+PS - Para rodar o projeto é necessário ter o Node instalado em seu computador.
 
 ## 🚀 Começando
 
 1.  **Instalando as dependências**
 
-    Navegue até o diretório do projeto rode:
+    Navegue até o diretório do projeto e rode:
 
     ```shell
     npm install
@@ -33,7 +33,7 @@ PS - Para rodar o projeto é necessário ter o Node instalado em seu compotador.
 
     O site do projeto já deve estar rodando em `http://localhost:8000`!
 
-    _Nota: Você também verá um segundo link: _`http://localhost:8000/___graphql`_. Esta é uma ferramenta que você pode usar para experimentar a consulta de seus dados. Saiba mais sobre como usar essa ferramenta no [tutorial do Gatsby (INGLES)](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    _Nota: Você também verá um segundo link: _`http://localhost:8000/___graphql`_. Esta é uma ferramenta que você pode usar para experimentar a consulta de seus dados. Saiba mais sobre como usar essa ferramenta no [tutorial do Gatsby (INGLÊS)](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
     Abra o diretório `my-default-starter` no editor de código de sua escolha e edite` src / pages / index.js`. Salve suas alterações e o navegador será atualizado em tempo real!
 
@@ -76,8 +76,6 @@ Uma rápida olhada nos arquivos e diretórios de nível superior que você verá
 10. **`package-lock.json`** (Veja o `package.json` abaixo, primeiro). Este é um arquivo gerado automaticamente com base nas versões exatas das dependências do npm que foram instaladas para o seu projeto. **(Você não altera este arquivo diretamente).**
 
 11. **`package.json`**: Um arquivo de manifesto para projetos Node.js, que inclui itens como metadados (nome, autor do projeto etc.). Este manifesto é como o npm sabe quais pacotes instalar para o seu projeto.
-
-12. **`README.md`**: Um arquivo de texto contendo informações de referência úteis sobre o seu projeto (esse mesmo que você está lendo).
 
 ## 🎓 Aprendendo sobre o Gatsby
 
