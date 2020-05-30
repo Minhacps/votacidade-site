@@ -6,7 +6,7 @@ import { Container, Row, Collapse, Navbar, NavbarToggler, NavbarBrand } from 're
 import { Menu } from './'
 
 const StyledHeader = styled.header`
-  background: rebeccapurple;
+  background: ${({theme}) => theme.primaryColor};
   margin-bottom: 1.45rem;
 `
 
