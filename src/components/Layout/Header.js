@@ -7,7 +7,6 @@ import { Menu } from './'
 
 const StyledHeader = styled.header`
   background: ${({theme}) => theme.primaryColor};
-  margin-bottom: 1.45rem;
 `
 
 export const Header = () => {
