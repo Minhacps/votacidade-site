@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Container, Row, Col } from 'reactstrap'
+import { Row, Col } from 'reactstrap'
 import { ThemeProvider } from 'styled-components'
 
 import { Header, Footer } from "./"
@@ -29,13 +29,11 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <Container>
-        <Row>
-          <Col>
-            <main>{children}</main>
-          </Col>
-        </Row>
-      </Container>
+      <Row>
+        <Col>
+          <main>{children}</main>
+        </Col>
+      </Row>
       <Footer />
     </ThemeProvider>
   )
