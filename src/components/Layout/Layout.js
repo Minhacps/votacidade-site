@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <Row>
+      <Row tag="main">
         <Col>
           <main>{children}</main>
         </Col>
