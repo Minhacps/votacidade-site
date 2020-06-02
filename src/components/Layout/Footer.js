@@ -3,9 +3,12 @@ import styled from 'styled-components'
 
 import { Container, Row, Col } from 'reactstrap'
 
+import { Link } from '../Link'
+
 const StyledFooter = styled.footer`
-  background-color: rebeccapurple;
+  background: ${({theme}) => theme.primaryColor};
   padding: 20px 0;
+  color: #fff;
 `
 
 export const Footer = () => (
@@ -15,7 +18,7 @@ export const Footer = () => (
         <Col>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <Link tag="a" href="https://www.gatsbyjs.org">Gatsby</Link>
         </Col>
       </Row>
     </Container>
