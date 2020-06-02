@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { Nav, NavItem } from 'reactstrap'
+import { Link } from '../Link'
 
 const query = graphql`
   query SiteTitleQuery {
@@ -25,7 +25,9 @@ export const Menu = () => {
     <Nav className="mr-0 ml-auto" navbar>
       {menuLinks && menuLinks.map(link => (
         <NavItem key={link.name}>
-          <Link className="nav-link" to={link.link}>{link.name}</Link>
+          <div className="nav-link">
+            <Link to={link.link}>{link.name}</Link>
+          </div>
         </NavItem>
       ))}
     </Nav>
