@@ -7,24 +7,26 @@ import { isEmailValid, isRequiredField } from '../utils/helper'
 
 const validators = (name, value, errors) => {
   const required = isRequiredField(value)
-  switch(name) {
-    case 'email':
-      if(required) {
-        return {...errors, email: required}
-      }
-      
-      if(!isEmailValid(value)) {
-        return {...errors, email: 'Digita um e-mail válido'}
+  switch (name) {
+    case 'EMAIL':
+      if (required) {
+        return { ...errors, EMAIL: required }
       }
 
-      delete errors.email
-
-    case 'cidade':
-      if(required) {
-        return {...errors, cidade: required}
+      if (!isEmailValid(value)) {
+        return { ...errors, EMAIL: 'Digita um e-mail válido' }
       }
 
-      delete errors.cidade
+      delete errors.EMAIL
+      break;
+
+    case 'CIDADE':
+      if (required) {
+        return { ...errors, CIDADE: required }
+      }
+
+      delete errors.CIDADE
+      break;
 
     default:
       return errors;
@@ -35,39 +37,39 @@ export const CTAEmail = ({ title }) => {
   const [diry, setDirty] = useState(false);
   const [errors, setErrors] = useState({});
   const [contactInfo, setContactInfo] = useState({
-    email: '',
-    cidade: '',
-    preCandidato: false,
+    EMAIL: '',
+    CIDADE: '',
+    CANDIDATO: false,
   });
 
   const setInfo = (el) => {
     const { name, value, type } = el.target
 
-    if(diry) {
-      const newErrors = validators(name, value, errors) || {[name]: ''}
-      setErrors({...errors, ...newErrors})
+    if (diry) {
+      const newErrors = validators(name, value, errors) || { [name]: '' }
+      setErrors({ ...errors, ...newErrors })
     }
 
     const newValue = (type === 'checkbox') ? !contactInfo[name] : value
-    setContactInfo({...contactInfo, [name]: newValue})
+    setContactInfo({ ...contactInfo, [name]: newValue })
   }
 
   const submit = (event) => {
-    event.preventDefault();
-
     const formErrors = Object
       .keys(contactInfo)
       .map(infoKey => validators(infoKey, contactInfo[infoKey], errors))
-      .reduce((acc, erro) => ({...acc, ...erro}))
+      .reduce((acc, erro) => ({ ...acc, ...erro }))
 
     setErrors(formErrors);
-    if(formErrors) {
+    if (formErrors) {
       setDirty(true);
     }
 
-    if(Object.keys(formErrors).length === 0) {
-      console.log(contactInfo)
+    if (Object.keys(formErrors).length === 0) {
+      return true
     }
+
+    event.preventDefault();
   }
 
   return (
@@ -78,17 +80,17 @@ export const CTAEmail = ({ title }) => {
           <h2>Nosso projeto está crescendo e esse ano estaremos em 5 cidades!</h2>
         </Col>
         <Col lg={{ size: 10, offset: 1 }}>
-          <Form onSubmit={submit}>
+          <Form target="_blank" method="POST" action="" onSubmit={submit}>
             <Row form>
               <Col lg="5">
                 <FormGroup>
-                  <Input invalid={!!errors.email} onChange={setInfo} type="mail" name="email" placeholder="Digite seu e-mail" />
-                  {errors.email && <FormFeedback>{errors.email}</FormFeedback>}
+                  <Input invalid={!!errors.EMAIL} onChange={setInfo} type="mail" name="EMAIL" placeholder="Digite seu e-mail" />
+                  {errors.EMAIL && <FormFeedback>{errors.email}</FormFeedback>}
                 </FormGroup>
               </Col>
               <Col lg="4">
                 <FormGroup>
-                  <Input invalid={!!errors.cidade} onChange={setInfo} type="select" name="cidade">
+                  <Input invalid={!!errors.CIDADE} onChange={setInfo} type="select" name="CIDADE">
                     <option value="">Selecione sua cidade</option>
                     <option>Campina Grande</option>
                     <option>Campinas</option>
@@ -96,19 +98,20 @@ export const CTAEmail = ({ title }) => {
                     <option>Porto Alegre</option>
                     <option>Recife</option>
                   </Input>
-                  {errors.cidade && <FormFeedback>{errors.cidade}</FormFeedback>}
+                  {errors.CIDADE && <FormFeedback>{errors.CIDADE}</FormFeedback>}
                 </FormGroup>
               </Col>
               <Col lg="3">
-                <Button block type="submit">Enviar</Button>
+                <Button block name="subscribe" type="submit">Enviar</Button>
               </Col>
               <Col>
                 <FormGroup check>
                   <Label check>
-                    <Input name="preCandidato" type="checkbox" onChange={setInfo} value={contactInfo.preCandidato} className="mt-0" />{' '}
+                    <Input name="CANDIDATO" type="checkbox" onChange={setInfo} className="mt-0" />{' '}
                     Sou pré-candidato e gostaria de receber mais informações
                   </Label>
                 </FormGroup>
+                <Input type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" />
               </Col>
             </Row>
           </Form>
