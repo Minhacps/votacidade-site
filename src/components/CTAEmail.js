@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 
-import { Container, Row, Col, Form, FormGroup, Label, Input, FormFeedback } from 'reactstrap'
+import { Container, Row, Col, Form, FormGroup, Label, Input as ReactstrapInput } from 'reactstrap'
 
 import { Button } from '../components/Button'
 import { isEmailValid, isRequiredField } from '../utils/helper'
+import { Title } from '../components/Title'
+import { Input } from '../components/Input'
 
 const validators = (name, value, errors) => {
   const required = isRequiredField(value)
@@ -33,7 +35,7 @@ const validators = (name, value, errors) => {
   }
 }
 
-export const CTAEmail = ({ title }) => {
+export const CTAEmail = ({ title, subtitle }) => {
   const [diry, setDirty] = useState(false);
   const [errors, setErrors] = useState({});
   const [contactInfo, setContactInfo] = useState({
@@ -76,42 +78,54 @@ export const CTAEmail = ({ title }) => {
     <Container>
       <Row>
         <Col lg={{ size: 8, offset: 2 }} className="text-center mt-5 mb-4">
-          <h1>{title}</h1>
-          <h2>Nosso projeto está crescendo e esse ano estaremos em 5 cidades!</h2>
+          {title && <Title tag="h1" weight="800" size="2.5rem">{title}</Title>}
+          {subtitle && <Title tag="h3" color="#959595" className="h4">{subtitle}</Title>}
         </Col>
         <Col lg={{ size: 10, offset: 1 }}>
           <Form target="_blank" method="POST" action="" onSubmit={submit}>
             <Row form>
               <Col lg="5">
-                <FormGroup>
-                  <Input invalid={!!errors.EMAIL} onChange={setInfo} type="mail" name="EMAIL" placeholder="Digite seu e-mail" />
-                  {errors.EMAIL && <FormFeedback>{errors.email}</FormFeedback>}
-                </FormGroup>
+                <Input
+                  errors={errors}
+                  invalid={!!errors.EMAIL}
+                  onChange={setInfo}
+                  type="mail"
+                  name="EMAIL"
+                  placeholder="Digite seu e-mail"
+                  bsSize="lg"
+                />
               </Col>
               <Col lg="4">
-                <FormGroup>
-                  <Input invalid={!!errors.CIDADE} onChange={setInfo} type="select" name="CIDADE">
-                    <option value="">Selecione sua cidade</option>
-                    <option>Campina Grande</option>
-                    <option>Campinas</option>
-                    <option>João Pessoa</option>
-                    <option>Porto Alegre</option>
-                    <option>Recife</option>
-                  </Input>
-                  {errors.CIDADE && <FormFeedback>{errors.CIDADE}</FormFeedback>}
-                </FormGroup>
+                <Input 
+                  errors={errors}
+                  invalid={!!errors.CIDADE}
+                  onChange={setInfo}
+                  type="select"
+                  name="CIDADE"
+                  bsSize="lg"
+                >
+                  <option value="">Selecione sua cidade</option>
+                  <option>Campina Grande</option>
+                  <option>Campinas</option>
+                  <option>João Pessoa</option>
+                  <option>Porto Alegre</option>
+                  <option>Recife</option>
+                </Input>
               </Col>
               <Col lg="3">
-                <Button block name="subscribe" type="submit">Enviar</Button>
+                <Button block size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
               </Col>
               <Col>
                 <FormGroup check>
-                  <Label check>
-                    <Input name="CANDIDATO" type="checkbox" onChange={setInfo} className="mt-0" />{' '}
+                  <ReactstrapInput style={{
+                    transform: 'scale(1.7) translateY(-2px)',
+                    transformOrigin: 'left'
+                  }} name="CANDIDATO" type="checkbox" onChange={setInfo} id="candidato" />{' '}
+                  <Label check for="candidato" className="ml-3">
                     Sou pré-candidato e gostaria de receber mais informações
                   </Label>
                 </FormGroup>
-                <Input type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" />
+                <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" />
               </Col>
             </Row>
           </Form>
