@@ -9,9 +9,10 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <header style={{ backgroundColor: '#BABABA' }} className="pt-5 pb-5">
+    <header style={{ backgroundColor: '#E6E6E6' }} className="pt-5 pb-5">
       <CTAEmail
-        title="Chamada para se inscrever e ser avisado do lançamento"
+        title={['Chamada para se inscrever e', <br/>, 'ser avisado do lançamento']}
+        subtitle="Nosso projeto está crescendo e esse ano estaremos em 5 cidades!"
       />
     </header>
     <h1>Hi people</h1>
