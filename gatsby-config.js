@@ -11,7 +11,11 @@ module.exports = {
       {
          name:'page2',
          link:'/page-2'
-      }
+      },
+      {
+        name:'Fique por Dentro',
+        link:'/page-news'
+     }
     ]
   },
   plugins: [
