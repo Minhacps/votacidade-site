@@ -22,6 +22,7 @@ const Coluna = styled.div`
 
 const ProjectDetails = () => {
   return (
+    <>
     <Container>
       <Row>
         <Coluna>
@@ -32,6 +33,17 @@ const ProjectDetails = () => {
         </Coluna>
       </Row>
     </Container>
+    <Container style={{backgroundColor: "#E8E8E8"}}>
+      <Row  >
+        <Coluna>
+          <h1 style={{fontSize: '18px', color: '#FBB040',fontWeight: 'bold' }}>ajude o projeto</h1>
+          <StyledTitle size="40px">Chamada sobre serem organizações<br></br> sem fins lucrativos</StyledTitle>
+
+          <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+        </Coluna>
+      </Row>
+    </Container>
+    </>
   )
 }
 
