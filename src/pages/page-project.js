@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from 'reactstrap';
 import { Layout } from "../components/Layout";
 import SEO from "../components/seo";
-import Title from '../components/Title';
 
 import ProjectDetails from "../components/PageProject/ProjectDetails";
 
@@ -16,8 +15,6 @@ const PageProject = (props) => {
         <Row>
           <Col>
             <h1 className='title'>O Projeto</h1>
-            
-
           </Col>
         </Row>
       </Container>
