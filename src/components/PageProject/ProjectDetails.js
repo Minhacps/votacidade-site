@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row } from 'reactstrap';
 import styled from 'styled-components';
 import { Title } from '../Title';
-
+import './ProjectDetails.js';
 const P = styled.p`
   font-family: Roboto;
   font-size: 18px;
@@ -15,13 +15,15 @@ const Coluna = styled.div`
 `
 
 const ProjectDetails = (props) => {
-  
-  // const estilo = ({props}) =>    
-  // !props.style? backgroundColor: "#E8E8E8"
+  const className = ' ' ;
+  if(props.style === 5){
+    console.log("Passei aqui");
+    className = "StyleContainer";
+  }
 
   return (
     <>
-      <div className={props.style}>
+      <div className={className}>
         <Container>
           <Row>
             <Coluna>
