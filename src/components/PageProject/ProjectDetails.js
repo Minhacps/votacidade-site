@@ -1,8 +1,10 @@
 import React from 'react'
 import { Container, Row } from 'reactstrap';
+
 import styled from 'styled-components';
 import { Title } from '../Title';
-import './ProjectDetails.js';
+import './ProjectDetails.css';
+
 const P = styled.p`
   font-family: Roboto;
   font-size: 18px;
@@ -15,15 +17,10 @@ const Coluna = styled.div`
 `
 
 const ProjectDetails = (props) => {
-  const className = ' ' ;
-  if(props.style === 5){
-    console.log("Passei aqui");
-    className = "StyleContainer";
-  }
-
+  const estlizacao = props.fundo;
   return (
     <>
-      <div className={className}>
+      <div style={{backgroundColor: estlizacao}}>
         <Container>
           <Row>
             <Coluna>
