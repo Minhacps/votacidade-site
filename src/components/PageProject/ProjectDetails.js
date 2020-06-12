@@ -1,9 +1,9 @@
 import React from 'react'
-import { Container, Row } from 'reactstrap';
+import { Container } from 'reactstrap'
+import styled from 'styled-components'
 
-import styled from 'styled-components';
-import { Title } from '../Title';
-import './ProjectDetails.css';
+import GroupTitle from '../GroupTitle';
+import './ProjectDetails.css'
 
 const P = styled.p`
   font-family: Roboto;
@@ -12,27 +12,21 @@ const P = styled.p`
 `;
 
 const Coluna = styled.div`
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding: 80px 0;
 `
 
-const ProjectDetails = (props) => {
-  const estlizacao = props.fundo;
-  return (
-    <>
-      <div style={{backgroundColor: estlizacao}}>
-        <Container>
-          <Row>
-            <Coluna>
-              <h1 style={{ fontSize: '18px', color: '#FBB040', fontWeight: 'bold' }}>{props.miniTitle}</h1>
-              <Title>{props.title}</Title>
-              <P>{props.text}</P>
-            </Coluna>
-          </Row>
-        </Container>
-      </div>
-    </>
+const ProjectDetails = ({ miniTitle, title, text, ...props }) => (
+  <div {...props}>
+    <Container>
+      <Coluna>
+        <GroupTitle 
+          title={miniTitle}
+          subTitle={title}
+        />
+        <P>{text}</P>
+      </Coluna>
+    </Container>
+  </div>
   )
-}
 
 export default ProjectDetails;

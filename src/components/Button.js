@@ -3,11 +3,7 @@ import styled from 'styled-components';
 
 import { Button as BootButton } from 'reactstrap';
 
-const getColor = ({ theme, color }) => {
-  const colorOptions = Object.keys(theme);
-  const themeColorKey = colorOptions.find(colorOption => colorOption === color);
-  return themeColorKey ? theme[themeColorKey] : '';
-}
+import { getColor } from '../utils/styles'
 
 const StyledButton = styled(BootButton)`
   background-color: ${getColor};
@@ -22,6 +18,6 @@ const StyledButton = styled(BootButton)`
   }
 `
 
-export const Button = ({ color = 'primaryColor', children, ...props }) => (
-  <StyledButton color={color} {...props}>{children}</StyledButton>
+export const Button = ({ children, ...props }) => (
+  <StyledButton {...props}>{children}</StyledButton>
 );
