@@ -5,74 +5,56 @@ const DateBlockStyled = styled.div`
   display: block;
   height: 70px;
   margin: 0px 5px 0px 5px;
+  position: relative;
+  padding-left: 104px;
 
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    background-color: #959595;
+    position: absolute;
+    top: 0;
+  }
+
+  &::before {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: calc((104px / 2) - 12px);
+  }
+
+  &:not(:last-child) {
+    &::after {
+      width: 4px;
+      height: 100%;
+      left: calc((104px / 2) - 2px);
+    }
+  }
 `
 
-const DrawBlock = styled.div`
-  display: inline-block;
-  height: 70px;
-  width: 15%;
-  
-`
-
-const TextBlock = styled.div`
-  display: inline-block; 
-  height: 70px;
-  width: 85%;
-  float: right;
-`
-
-const Circle = styled.div`
-  background-color: #959595;
-  width: 24px;
-  height: 24px;
-  border: 1px solid #959595;
-  border-radius: 100px;
-  margin: auto;
-  
-`
-
-const VerticalLine = styled.div`
-  background-color: #959595;
-  width: 6px;
-  height: 50px;
-  border: 1px solid #959595;
-  margin-left: 7px;
-  margin: auto;
-  
-`
-
-const Date = styled.p`
+const Date = styled.time`
   display: inline-block;
   color: #FBB040;
-  margin: 0px 5px 0px 2px;
+
+  &::after {
+    content: '|';
+    margin-left: 10px;
+  }
 `
 const TitleDate = styled.p`
   display: inline-block;
-  margin: 0px 5px 0px 2px;
-  
 `
 const TextDate = styled.p`
   color: black; 
-  display: block; 
+  display: block;
 `
 export const DateBlock = ({ date, title, text, children }) => {
-
   return (
     <DateBlockStyled>
-      <DrawBlock>
-        <Circle />
-        <VerticalLine />
-      </DrawBlock>
-      <TextBlock>
-        <Date>
-          {date}
-        </Date>
-        <TitleDate>
-          {title}
-        </TitleDate>
-        <TextDate>{text}</TextDate>
-      </TextBlock>
+      <Date className="mt-1 mr-2">{date}</Date>
+      <TitleDate className="mt-1">{title}</TitleDate>
+      <TextDate>{text}</TextDate>
     </DateBlockStyled>
   )
 }
