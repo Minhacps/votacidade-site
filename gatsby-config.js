@@ -9,19 +9,9 @@ module.exports = {
          link:'/'
       },
       {
-<<<<<<< HEAD
          name:'Projeto',
          link:'/page-project'
       }
-=======
-         name:'page2',
-         link:'/page-2'
-      },
-      {
-        name:'Fique por Dentro',
-        link:'/page-news'
-     }
->>>>>>> 9c75097f9a300aad9df63da37e66aed5be1bd38f
     ]
   },
   plugins: [
