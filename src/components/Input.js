@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import { Input as ReactstrapInput, FormGroup, FormFeedback } from 'reactstrap'
 
 const StyledInput = styled(ReactstrapInput)`
-  padding: 20px 10px;
   border-radius: 10px;
   border: 0;
   font-size: 16px;
+  appearance: none;
 
   &:not(input), &::placeholder {
     color: #6E6E6E;

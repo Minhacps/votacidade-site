@@ -44,16 +44,20 @@ export const CTAEmail = ({ title, subtitle }) => {
     CANDIDATO: false,
   });
 
+  console.log("Cheguei no formulário.");
+  console.log("[CTAEmail:", contactInfo);
+
   const setInfo = (el) => {
-    const { name, value, type } = el.target
+    const { name, value, type } = el.target;
 
     if (diry) {
       const newErrors = validators(name, value, errors) || { [name]: '' }
       setErrors({ ...errors, ...newErrors })
     }
 
-    const newValue = (type === 'checkbox') ? !contactInfo[name] : value
+    const newValue = (type === 'checkbox') ? !contactInfo[name] : value;
     setContactInfo({ ...contactInfo, [name]: newValue })
+    console.log("Depois de passar pelo onChange: ",contactInfo);
   }
 
   const submit = (event) => {
