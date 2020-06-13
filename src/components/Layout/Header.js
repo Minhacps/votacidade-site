@@ -5,9 +5,7 @@ import { Container, Row, Collapse, Navbar, NavbarToggler, NavbarBrand } from 're
 
 import { Menu } from './'
 
-const StyledHeader = styled.header`
-  background: ${({theme}) => theme.primaryColor};
-`
+import logo from '../../images/logo-vota-cidades.svg'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +17,9 @@ export const Header = () => {
       <Container>
         <Row>
         <Navbar className="col" light expand="md">
-          <NavbarBrand href="/">Vota Cidade</NavbarBrand>
+          <NavbarBrand href="/">
+            <img src={logo} alt="Logo VotaCidades" />
+          </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Menu />
