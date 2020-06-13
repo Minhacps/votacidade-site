@@ -8,7 +8,8 @@ import './ProjectDetails.css'
 const P = styled.p`
   font-family: Roboto;
   font-size: 18px;
-  margin-top: 24px; 
+  margin-top: 24px;
+  color: ${({ theme }) =>  theme.darkGray}; 
 `;
 
 const Coluna = styled.div`
