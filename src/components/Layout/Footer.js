@@ -3,24 +3,18 @@ import styled from 'styled-components'
 
 import { Container, Row, Col } from 'reactstrap'
 
-import { Link } from '../Link'
-
 const StyledFooter = styled.footer`
-  background: ${({theme}) => theme.primaryColor};
-  padding: 20px 0;
+  background: #4F1778;
+  padding: 15px 0;
   color: #fff;
 `
 
 export const Footer = () => (
   <StyledFooter>
-    <Container>
-      <Row>
-        <Col>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <Link tag="a" href="https://www.gatsbyjs.org">Gatsby</Link>
-        </Col>
-      </Row>
+    <Container className="text-center">
+      © {new Date().getFullYear()}
+      {` `}
+      Todos os direitos reservados a <strong>Vota Cidade</strong>
     </Container>
   </StyledFooter>
 )
