@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { Layout } from "../components/Layout";
 import SEO from "../components/seo";
 
-import ProjectDetails from "../components/PageProject/ProjectDetails";
+import ProjectDetails from "../components/ProjectDetails";
 import HeaderTitle from '../components/HeaderTitle';
 import Card from '../components/Card'
 
