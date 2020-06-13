@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import styled from 'styled-components'
 
 import { Container, Row, Collapse, Navbar, NavbarToggler, NavbarBrand } from 'reactstrap';
 
@@ -9,11 +8,10 @@ import logo from '../../images/logo-vota-cidades.svg'
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <StyledHeader isOpen={isOpen}>
+    <header>
       <Container>
         <Row>
         <Navbar className="col" light expand="md">
@@ -27,6 +25,6 @@ export const Header = () => {
         </Navbar>
         </Row>
       </Container>
-    </StyledHeader>
+    </header>
   )
 }
