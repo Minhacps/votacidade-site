@@ -14,6 +14,8 @@ const StyledButton = styled(BootButton)`
   transition: filter .2s;
   will-change: filter, color;
   color: ${props => props.light ? props.theme.darkGray : '#fff'};
+  border-radius: 10px;
+  font-size: 16px;
   
   &:hover {
     color: ${props => props.light ? props.theme.darkGray : '#fff'};

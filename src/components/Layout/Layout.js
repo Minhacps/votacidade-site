@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Row, Col } from 'reactstrap'
 import { ThemeProvider } from 'styled-components'
 
 import { Header, Footer } from "./"
@@ -20,7 +19,7 @@ const theme = {
   primaryColor: '#662D91',
   secondaryColor: '#FBB040',
   darkGray: '#161616',
-  lightGray: '#BABABA',
+  lightGray: '#E6E6E6',
   sucess: '#46A46C',
   error: '#DA304C',
 };
@@ -29,11 +28,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <Row tag="main">
-        <Col>
-          <main>{children}</main>
-        </Col>
-      </Row>
+      <main>{children}</main>
       <Footer />
     </ThemeProvider>
   )
