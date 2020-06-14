@@ -1,14 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-const colorMapping = ({ color, theme }) =>
-  !color ? theme.primaryColor : color
+import { getColor, getFontWeight, buildFontSize } from '../utils/styles';
 
 const StyledTitle = styled.h3`
-  color: ${colorMapping};
-  font-weight: ${({ weight }) => weight || 700};
-  ${({ size }) => size && `font-size: ${size}`};
-`
+  color: ${getColor};
+  font-weight: ${getFontWeight};
+  ${buildFontSize};
+`;
 
 export const Title = ({ tag = 'h3', children, ...props }) => (
   <StyledTitle as={tag} {...props}>
