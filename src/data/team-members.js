@@ -5,6 +5,11 @@ export const teamMembers = [
         role: 'UX/UI Designer',
     },
     {
+        name: 'Andre Bordignon ',
+        photo: require('../images/photos_team/AndreBordignon.png'),
+        role: 'IFSP e Minha Campinas',
+    },
+    {
         name: 'Gabriel Ribeiro',
         photo: require('../images/photos_team/GabrielRibeiro.png'),
         role: 'Front-end',
@@ -20,6 +25,11 @@ export const teamMembers = [
         role: 'Front-end',
     },
     {
+        name: 'João Aleixo',
+        photo: require('../images/photos_team/JoaoAleixo.png'),
+        role: 'IFSP e Front-end',
+    },
+    {
         name: 'Lucas Guima',
         photo: require('../images/photos_team/LucasGuima.png'),
         role: 'Back-End',
@@ -29,10 +39,10 @@ export const teamMembers = [
         photo: require('../images/photos_team/VictorMiguez.png'),
         role: 'Full Stack',
     },
-    // {
-    //     name: 'Vitor Perin',
-    //     photo: require('../images/photos_team/VitorPerin.png'),
-    //     role: 'Back-end',
-    // },
+    {
+        name: 'Vitor Perin',
+        photo: require('../images/photos_team/VitorPerin.png'),
+        role: 'Back-end',
+    },
 
 ]

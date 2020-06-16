@@ -68,15 +68,14 @@ const PageProject = () => {
           title="realização"
           subTitle="Conheça quem faz acontecer!"
         />
-        <Row className="mt-4">
+        <Row className="mt-2">
           {teamMembers.map(member => (
             <TeamCard
+              key={member.name}
               member={member}
             />
           ))}
         </Row>
-
-
       </Container>
     </Layout>
   )
