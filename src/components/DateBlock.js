@@ -36,6 +36,7 @@ const DateBlockStyled = styled.div`
 const Date = styled.time`
   display: inline-block;
   color: #FBB040;
+  font-weight: bold;
 
   &::after {
     content: '|';
