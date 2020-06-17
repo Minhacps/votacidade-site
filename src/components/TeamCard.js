@@ -16,7 +16,7 @@ const TeamCard = (props) => {
     return (
         <Col className="px-2 mt-3" xs="6" sm="4" md="3" lg="2">
             <StyledTeamCard className="mb-2">
-                <img style={{borderRadius: '10px'}} src={props.member.photo} />
+                <img style={{borderRadius: '10px'}} src={props.member.photo} alt={props.member.name}/>
             </StyledTeamCard>
             <Title style={{ textAlign: 'center' }} size="0.9rem" tag="h5" color="#662D91">
                 {props.member.name}
