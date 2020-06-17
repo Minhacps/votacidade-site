@@ -27,36 +27,36 @@ const PageProject = () => {
         style={{ backgroundColor: '#E8E8E8', paddingBottom: 40 }}
       />
       <Container>
-        <Row style={{ transform: 'translateY(-75px)' }} noGutters={true}>
-          <Col className="pr-1">
+        <Row xs="2" sm="3" md="4" lg="5" style={{ transform: 'translateY(-80px)', display: 'flex'}} noGutters={true}>
+          <Col className="pr-1 mt-2 ">
             <Card
               title="Campinas"
               image="https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas-990x556.jpg"
               linkTo="https://www.minhacampinas.org.br/"
             />
           </Col>
-          <Col className="px-1">
+          <Col className="px-1 mt-2">
             <Card
               title="Campinas"
               image="https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas-990x556.jpg"
               linkTo="https://www.minhacampinas.org.br/"
             />
           </Col>
-          <Col className="px-1">
+          <Col className="px-1 mt-2">
             <Card
               title="Campinas"
               image="https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas-990x556.jpg"
               linkTo="https://www.minhacampinas.org.br/"
             />
           </Col >
-          <Col className="px-1">
+          <Col className="px-1 mt-2">
             <Card
               title="Campinas"
               image="https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas-990x556.jpg"
               linkTo="https://www.minhacampinas.org.br/"
             />
           </Col>
-          <Col className="pl-1">
+          <Col className="pl-1 mt-2">
             <Card
               title="Campinas"
               image="https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas-990x556.jpg"
