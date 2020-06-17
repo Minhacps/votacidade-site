@@ -1,9 +1,8 @@
 import React from "react"
 import styled from 'styled-components'
 import {
-  Container, Row, Col, Card, CardImg, CardBody, CardStyle, CardTitle, CardSubtitle, CardText
+  Container, Row, Col, Card, CardImg, CardBody, CardText
 } from 'reactstrap';
-import { Link } from 'gatsby';
 
 import { Layout } from "../components/Layout";
 import SEO from "../components/seo";
@@ -38,8 +37,8 @@ const PageNews = () => {
         />
         <Row>
           <Col md="12" lg="6" className="mb-3">
-            <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kxfGZwFQgHM" allowfullscreen></iframe>
+            <div className="embed-responsive embed-responsive-4by3">
+              <iframe title="Vídeo sobre as eleições 2020" className="embed-responsive-item" src="https://www.youtube.com/embed/kxfGZwFQgHM" allowfullscreen></iframe>
             </div>
           </Col>
           <Col lg="6">
