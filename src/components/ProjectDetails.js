@@ -16,7 +16,7 @@ const ProjectDetails = ({ miniTitle, title, text, ...props }) => (
           title={miniTitle}
           subTitle={title}
         />
-        <p className="mt-4">{text}</p>
+        <p className="mt-3">{text}</p>
       </Coluna>
     </Container>
   </div>
