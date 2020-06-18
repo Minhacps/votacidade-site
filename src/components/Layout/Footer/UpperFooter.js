@@ -53,8 +53,9 @@ const Contato = ({ cidade, contato }, index) => (
 )
 
 const Apoiadores = (apoiador, index) => (
-  <Col key={`apoiador-${index}`} xs="4" lg="6" xl="4" className="mb-3">
-    <img src={apoiador.logo} alt={`${apoiador.nome} logo`} style={{ maxWidth: '100%' }} />
+  <Col key={`apoiador-${index}`} xs="4" lg="6" xl="4" className="mb-3" style={{ display: 'flex',
+    justifyContent: 'center' ,alignItems: 'center' }}>
+    <img src={apoiador.logo} alt={`${apoiador.nome} logo`} style={{ maxWidth: '100%', display: 'block', margin: 'auto' }} />
   </Col>
 )
 
