@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Title } from './Title'
-import { Button } from './Button'
 
 import { buildBackgroundImage } from '../utils/styles'
 
@@ -33,10 +32,10 @@ const StyledCard = styled.div`
   }
 `
 
-const Card = ({ title, linkTo, ...props }) => (
+const Card = ({ title, children, ...props }) => (
   <StyledCard {...props}>
     {title && <Title tag="h4" color="#fff" style={{ zIndex: 1 }}>{title}</Title>}
-    {linkTo && <Button color="transparent" style={{ fontWeight: 800 }}>APOIE!</Button>}
+    {children}
   </StyledCard>
 )
 
