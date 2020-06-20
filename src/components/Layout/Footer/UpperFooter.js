@@ -72,7 +72,7 @@ export const UpperFooter = ({ contatos = [], apoiadores = []}) => (
         <ColFixing sm="12" lg="4" xl="4" className="mb-4">
           <Title tag="h4" size="18px" color="secondaryColor">Apoie o projeto!</Title>
           <p style={{ color: '#fff' }}>O Vota Cidade foi idealizado por cinco cidades da Rede Nossas Cidades, organizações sem fins lucrativos, que tem por objetivo fortalecer e incentivar a cultura da participação em questões públicas.</p>
-          <Link to="/page-project">
+          <Link to="/o-projeto">
             <StyledButton size="lg" color="secondaryColor">Saiba Mais</StyledButton>
           </Link>
         </ColFixing>
