@@ -3,4 +3,6 @@ export const isEmailValid = email => email
 
 export const isRequiredField = (value) => !value ? 'Esse campo é obrigatório' : ''
 
-export const alfabeticOrder = (item, item2) => item.name > item2.name ? 1 : -1
+export const alfabeticOrder = (propriedadeToFilter) =>
+  (item, item2) => item[propriedadeToFilter] > item2[propriedadeToFilter] ? 1 : -1
+
