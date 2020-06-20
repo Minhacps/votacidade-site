@@ -72,7 +72,7 @@ const PageProject = () => {
         />
         <Row xs="2" sm="3" md="4" lg="5" className="mt-2 mb-5" noGutters>
           {teamMembers
-            .sort(alfabeticOrder)
+            .sort(alfabeticOrder('name'))
             .map(member => (
               <TeamCard
                 key={member.name}
