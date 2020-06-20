@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import { Layout } from "../components/Layout";
 import SEO from "../components/seo";
 
+import { alfabeticOrder } from '../utils/helper';
+
 import ProjectDetails from "../components/ProjectDetails";
 import HeaderTitle from '../components/HeaderTitle';
 import Card from '../components/Card'
@@ -69,12 +71,14 @@ const PageProject = () => {
           subTitle="Conheça quem faz acontecer!"
         />
         <Row xs="2" sm="3" md="4" lg="5" className="mt-2 mb-5" noGutters>
-          {teamMembers.map(member => (
-            <TeamCard
-              key={member.name}
-              member={member}
-            />
-          ))}
+          {teamMembers
+            .sort(alfabeticOrder)
+            .map(member => (
+              <TeamCard
+                key={member.name}
+                member={member}
+              />
+            ))}
         </Row>
       </Container>
     </Layout>
