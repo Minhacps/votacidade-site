@@ -28,7 +28,7 @@ const PageProject = () => {
       />
       <Container>
         <Row xs="2" sm="3" md="4" lg="5" style={{ transform: 'translateY(-80px)', display: 'flex'}} noGutters={true}>
-          <Col className="pr-1 mt-2 ">
+          <Col className="pr-1 mt-2">
             <Card
               title="Campinas"
               image= "https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas-990x556.jpg"
@@ -68,7 +68,7 @@ const PageProject = () => {
           title="realização"
           subTitle="Conheça quem faz acontecer!"
         />
-        <Row className="mt-2">
+        <Row xs="2" sm="3" md="4" lg="5" className="mt-2 mb-5" noGutters>
           {teamMembers.map(member => (
             <TeamCard
               key={member.name}
