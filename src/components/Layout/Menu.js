@@ -1,8 +1,8 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import styled from 'styled-components'
 
-import { Nav, NavItem } from 'reactstrap'
-import { Link } from '../Link'
+import { Nav, NavItem, NavLink } from 'reactstrap'
 
 const query = graphql`
   query SiteTitleQuery {
@@ -17,6 +17,17 @@ const query = graphql`
   }
 `
 
+const StyledLink = styled(NavLink)`
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  color: ${({ theme }) =>  theme.darkGray};
+  
+  &:hover {
+    color: ${({ theme }) =>  theme.darkGray};
+  }
+`
+
 export const Menu = () => {
   const data = useStaticQuery(query)
   const { menuLinks } = data.site.siteMetadata
@@ -25,9 +36,9 @@ export const Menu = () => {
     <Nav className="mr-0 ml-auto" navbar>
       {menuLinks && menuLinks.map(link => (
         <NavItem key={link.name}>
-          <div className="nav-link">
-            <Link to={link.link}>{link.name}</Link>
-          </div>
+          <StyledLink tag={Link} to={link.link} activeClassName="active">
+            {link.name}
+          </StyledLink>
         </NavItem>
       ))}
     </Nav>
