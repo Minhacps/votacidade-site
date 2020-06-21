@@ -85,10 +85,14 @@ export const CTAEmail = ({ title, subtitle }) => {
           {title && <Title tag="h1" weight="800" size="2.5rem">{title}</Title>}
           {subtitle && <Title tag="h3" color="#959595" className="h4">{subtitle}</Title>}
         </Col>
+      </Row>
+
+      <Row>
         <Col lg={{ size: 10, offset: 1 }}>
           <Form target="_blank" method="POST" action="" onSubmit={submit}>
-            <Row form>
-              <Col lg="5">
+            <FormGroup row>
+              <Label for="email" hidden>E-mail</Label>
+              <Col lg={5}>
                 <Input
                   errors={errors}
                   invalid={!!errors.EMAIL}
@@ -97,9 +101,12 @@ export const CTAEmail = ({ title, subtitle }) => {
                   name="EMAIL"
                   placeholder="Digite seu e-mail"
                   bsSize="lg"
+                  id="email"
                 />
               </Col>
-              <Col lg="4">
+
+              <Label for="city" hidden>Cidade</Label>
+              <Col lg={4}>
                 <Input 
                   errors={errors}
                   invalid={!!errors.CIDADE}
@@ -107,6 +114,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                   type="select"
                   name="CIDADE"
                   bsSize="lg"
+                  id="city"
                 >
                   <option value="">Selecione sua cidade</option>
                   <option>Campina Grande</option>
@@ -116,9 +124,13 @@ export const CTAEmail = ({ title, subtitle }) => {
                   <option>Recife</option>
                 </Input>
               </Col>
+
               <Col lg="3">
                 <Button block size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
               </Col>
+            </FormGroup>
+
+            <FormGroup row>
               <Col>
                 <FormGroup check>
                   <ReactstrapInput style={{
@@ -131,7 +143,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                 </FormGroup>
                 <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" />
               </Col>
-            </Row>
+            </FormGroup>
           </Form>
         </Col>
       </Row>
