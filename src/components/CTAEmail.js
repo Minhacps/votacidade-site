@@ -138,7 +138,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                     transformOrigin: 'left'
                   }} name="CANDIDATO" type="checkbox" onChange={setInfo} id="candidato" />{' '}
                   <Label check for="candidato" className="ml-3">
-                    Sou pré-candidato e gostaria de receber mais informações
+                    Sou pré-candidato(a) e gostaria de receber mais informações
                   </Label>
                 </FormGroup>
                 <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" />
