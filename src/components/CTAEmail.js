@@ -117,11 +117,11 @@ export const CTAEmail = ({ title, subtitle }) => {
                   id="city"
                 >
                   <option value="">Selecione sua cidade</option>
-                  <option>Campina Grande</option>
-                  <option>Campinas</option>
-                  <option>João Pessoa</option>
-                  <option>Porto Alegre</option>
-                  <option>Recife</option>
+                  <option>Campina Grande (PB)</option>
+                  <option>Campinas (SP)</option>
+                  <option>João Pessoa (PB)</option>
+                  <option>Porto Alegre (RS)</option>
+                  <option>Recife (PE)</option>
                 </Input>
               </Col>
 
