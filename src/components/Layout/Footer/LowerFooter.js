@@ -18,7 +18,18 @@ const StyledFooter = styled.div`
 export const LowerFooter = () => (
   <StyledFooter color="#4F1778">
     <Container className="text-center">
-      © {new Date().getFullYear()} Todos os direitos reservados a <strong>Vota Cidade</strong>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+        <img alt="Licença Creative Commons" style={{borderWidth:'0'}} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+        </a>
+        <br />Este trabalho está licenciado com uma Licença 
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> Creative Commons - Atribuição  4.0 Internacional</a>.
     </Container>
-  </StyledFooter>
+  </StyledFooter >
 )
+
+
+/*
+
+ © {new Date().getFullYear()} Todos os direitos reservados a <strong>Vota Cidade</strong>
+
+*/
