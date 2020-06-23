@@ -79,5 +79,10 @@ export const teamMembers = [
         photo: require('../images/photos_team/VitorPerin.png'),
         role: 'Back-end',
     },
+    {
+        name: 'Jerlan Alves',
+        photo: require('../images/photos_team/Jerlan.png'),
+        role: 'Minha Jampa',
+    },
 
 ]
