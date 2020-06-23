@@ -19,4 +19,12 @@ export const apoiadores = [
     nome: 'Minha Porto Alegre',
     logo: require('../images/logo-minha-poa.png'),
   },
+  {
+    nome: 'Meu Recife',
+    logo: require('../images/logo-meu-recife.png'),
+  },
+  {
+    nome: 'Minha Campina',
+    logo: require('../images/logo-minha-campina.png'),
+  },
 ]
