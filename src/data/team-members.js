@@ -10,6 +10,26 @@ export const teamMembers = [
         role: 'IFSP e Minha Campinas',
     },
     {
+        name: 'Camila Oliveira',
+        photo: require('../images/photos_team/CamilaOliveira.png'),
+        role: 'Minha Porto Alegre',
+    },
+    {
+        name: 'Claudia Oliveira',
+        photo: require('../images/photos_team/ClaudiaOliveira.png'),
+        role: 'Minha Campinas',
+    },
+    {
+        name: 'Elisa Bonotto - Zi',
+        photo: require('../images/photos_team/ZiBonotto.png'),
+        role: 'Minha Porto Alegre',
+    },
+    {
+        name: 'Elisa Mueller',
+        photo: require('../images/photos_team/ElisaMueller.png'),
+        role: 'Minha Campinas',
+    },
+    {
         name: 'Gabriel Ribeiro',
         photo: require('../images/photos_team/GabrielRibeiro.png'),
         role: 'Front-end',
@@ -25,14 +45,29 @@ export const teamMembers = [
         role: 'Front-end',
     },
     {
+        name: 'José Ronaldo',
+        photo: require('../images/photos_team/JoseRonaldo.png'),
+        role: 'Minha Campina',
+    },
+    {
         name: 'João Aleixo',
         photo: require('../images/photos_team/JoaoAleixo.png'),
         role: 'IFSP e Front-end',
     },
     {
+        name: 'Juliana Patete',
+        photo: require('../images/photos_team/JulianaPatete.png'),
+        role: 'Minha Campinas',
+    },
+    {
         name: 'Lucas Guima',
         photo: require('../images/photos_team/LucasGuima.png'),
         role: 'Back-End',
+    },
+    {
+        name: 'Marcelo Nisida',
+        photo: require('../images/photos_team/MarceloNisida.png'),
+        role: 'Minha Campinas',
     },
     {
         name: 'Victor Miguez',
@@ -43,6 +78,11 @@ export const teamMembers = [
         name: 'Vitor Perin',
         photo: require('../images/photos_team/VitorPerin.png'),
         role: 'Back-end',
+    },
+    {
+        name: 'Jerlan Alves',
+        photo: require('../images/photos_team/Jerlan.png'),
+        role: 'Minha Jampa',
     },
 
 ]
