@@ -33,7 +33,9 @@ const PageProject = () => {
   return (
     <Layout>
       <SEO title="Page Project" />
-      <HeaderTitle />
+      <HeaderTitle
+        title="O Projeto"
+      />
       <ProjectDetails
         miniTitle={"conheça o projeto"}
         title={"Chamada falando sobre a iniciativa"}

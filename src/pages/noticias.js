@@ -29,11 +29,14 @@ const PageNews = () => {
   return (
     <Layout>
       <SEO title="Fique por Dentro" />
-      <HeaderTitle />
+      <HeaderTitle
+        title="Notícias"
+      />
       <Container>
         <GroupTitle
           title="Eleições 2020"
           subTitle="Espaço para notícias e educação política"
+          className="my-5"
         />
         <Row>
           <Col md="12" lg="6" className="mb-3">
@@ -83,11 +86,12 @@ const PageNews = () => {
         </Row>
       </Container >
 
-      <ElectoralCalendarStyled className="mt-3 pt-2">
+      <ElectoralCalendarStyled className="mt-3 pt-5">
         <Container>
           <GroupTitle
             title="Eleições 2020"
             subTitle="Calendário Eleitoral"
+            className="mt-2 mb-5"
           />
           <DateBlock date='20-Jul-2020' title='Início da convenções partidárias' text='' />
           <DateBlock date='05-Ago-2020' title='Fim convenções partidárias' text='' />
