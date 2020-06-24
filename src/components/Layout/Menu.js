@@ -21,10 +21,14 @@ const StyledLink = styled(NavLink)`
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
-  color: ${({ theme }) =>  theme.darkGray};
+  color: ${({ theme }) =>  theme.darkGray} !important;
+
+  &.active {
+    color: ${({ theme }) =>  theme.primaryColor} !important;
+  }
   
   &:hover {
-    color: ${({ theme }) =>  theme.darkGray};
+    color: ${({ theme }) =>  theme.darkGray} !important;
   }
 `
 

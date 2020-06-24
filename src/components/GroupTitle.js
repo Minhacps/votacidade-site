@@ -6,11 +6,11 @@ import { Title as Subtitle } from './Title'
 const Title = styled.h2`
   font-size: 18px;
   font-weight: bold;
-  color: ${({theme}) => theme.secondaryColor};
+  color: ${({theme}) => theme.darkGray};
 `
 
 const GroupTitle = (props) => (
-  <div>
+  <div className={props.className}>
     <Title>{props.title}</Title>
     <Subtitle>{props.subTitle}</Subtitle>
   </div>

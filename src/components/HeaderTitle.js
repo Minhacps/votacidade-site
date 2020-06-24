@@ -9,10 +9,10 @@ const StyledHeader = styled.header`
   padding: 48px;
 `
 
-const HeaderTitle = (props) => (
+const HeaderTitle = ({ title }) => (
   <StyledHeader>
     <Container>
-      <Title as="h1" size="24px" color="#959595">O Projeto</Title>
+      <Title as="h1" size="24px" color="darkGray">{title}</Title>
     </Container>
   </StyledHeader>
 )

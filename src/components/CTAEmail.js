@@ -79,7 +79,7 @@ export const CTAEmail = ({ title, subtitle }) => {
       <Row>
         <Col lg={{ size: 8, offset: 2 }} className="text-center mt-5 mb-4">
           {title && <Title tag="h1" weight="800" size="2.5rem">{title}</Title>}
-          {subtitle && <Title tag="h3" color="#959595" className="h4">{subtitle}</Title>}
+          {subtitle && <Title tag="h3" color="darkGray" className="h4">{subtitle}</Title>}
         </Col>
       </Row>
 
