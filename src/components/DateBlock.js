@@ -12,7 +12,7 @@ const DateBlockStyled = styled.div`
   &::after {
     content: '';
     display: block;
-    background-color: #959595;
+    background-color: ${({theme}) => theme.secondaryColor};
     position: absolute;
     top: 0;
   }
@@ -35,7 +35,7 @@ const DateBlockStyled = styled.div`
 
 const Date = styled.time`
   display: inline-block;
-  color: #FBB040;
+  color: ${({theme}) => theme.primaryColor};
   font-weight: bold;
 
   &::after {
