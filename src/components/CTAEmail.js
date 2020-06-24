@@ -44,9 +44,6 @@ export const CTAEmail = ({ title, subtitle }) => {
     CANDIDATO: false,
   });
 
-  console.log("Cheguei no formulário.");
-  console.log("[CTAEmail:", contactInfo);
-
   const setInfo = (el) => {
     const { name, value, type } = el.target;
 
@@ -57,7 +54,6 @@ export const CTAEmail = ({ title, subtitle }) => {
 
     const newValue = (type === 'checkbox') ? !contactInfo[name] : value;
     setContactInfo({ ...contactInfo, [name]: newValue })
-    console.log("Depois de passar pelo onChange: ",contactInfo);
   }
 
   const submit = (event) => {
