@@ -18,7 +18,7 @@ const TeamCard = (props) => {
             <Title size="0.9rem" tag="h5" color="#662D91">
                 {props.member.name}
             </Title>
-            <Title style={{ marginTop: '-8px' }} size="0.8rem" tag="h6" color="#959595">
+            <Title style={{ marginTop: '-8px' }} size="0.8rem" tag="h6" color="#333333">
                 {props.member.role}
             </Title>
         </Col>
