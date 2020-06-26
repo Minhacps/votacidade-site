@@ -14,15 +14,22 @@ const StyledFooter = styled.div`
     font-size: initial;
   }
 `
+const StyledLink = styled.a`
+  color: #FBB040;
+  &:hover{
+    color: #DAA520;
+    text-decoration: none;
+  }
+`
 
 export const LowerFooter = () => (
   <StyledFooter color="#4F1778">
     <Container className="text-center">
-      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-        <img alt="Licença Creative Commons" style={{borderWidth:'0'}} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-        </a>
-        <br />Este trabalho está licenciado com uma Licença 
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"> Creative Commons - Atribuição  4.0 Internacional</a>.
+      <a rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+        <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+      </a>
+      <br />Este trabalho está licenciado com uma Licença
+      <StyledLink rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons - Atribuição  4.0 Internacional</StyledLink>.
     </Container>
   </StyledFooter >
 )
