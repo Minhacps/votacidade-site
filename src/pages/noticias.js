@@ -25,6 +25,14 @@ const ElectoralCalendarStyled = styled.div`
   background-color: #dedede;
 `
 
+const StyledLink = styled.a`
+  color: #662D91;
+  &:hover{
+    color: #DAA520;
+    text-decoration: none;
+  }
+`
+
 const PageNews = () => {
   return (
     <Layout>
@@ -52,7 +60,7 @@ const PageNews = () => {
                   <CardBody>
                     <CardText>
                       Em 2020, ocorrem as eleições municipais. Entretanto, muitas reformas foram feitas nessa questão.
-                      <a href='https://www.politize.com.br/novas-regras-para-as-eleicoes-2020/'>Leia mais</a>
+                      <StyledLink rel="noopener noreferrer" href="https://www.politize.com.br/novas-regras-para-as-eleicoes-2020/" target="_blank">Leia mais</StyledLink>.
                     </CardText>
                   </CardBody>
                 </Card>
@@ -61,7 +69,9 @@ const PageNews = () => {
                 <Card>
                   <CardImg top width="100%" src={fundoeleitoral} alt="Card image cap" />
                   <CardBody>
-                    <CardText>O fundo eleitoral não é o fundo partidário. Entenda mais o que significa esse novo fundo. <a href='https://www.politize.com.br/fundo-eleitoral/'>Leia mais</a></CardText>
+                    <CardText>O fundo eleitoral não é o fundo partidário. Entenda mais o que significa esse novo fundo.
+                      <StyledLink rel="noopener noreferrer" href="https://www.politize.com.br/fundo-eleitoral/" target="_blank">Leia mais</StyledLink>.
+                    </CardText>
                   </CardBody>
                 </Card>
               </Col>
@@ -69,7 +79,9 @@ const PageNews = () => {
                 <Card>
                   <CardImg top width="100%" src={cotasdegenero} alt="Card image cap" />
                   <CardBody>
-                    <CardText>Entre idas e vindas, desde os anos 90, o Brasil adota mecanismos de compensação para corrigir a subrepresentatividade feminina. <a href='https://www.politize.com.br/cotas-de-genero-em-eleicoes/'>Leia mais</a></CardText>
+                    <CardText>Entre idas e vindas, desde os anos 90, o Brasil adota mecanismos de compensação para corrigir a subrepresentatividade feminina.
+                      <StyledLink rel="noopener noreferrer" href="https://www.politize.com.br/cotas-de-genero-em-eleicoes/" target="_blank">Leia mais</StyledLink>.
+                    </CardText>
                   </CardBody>
                 </Card>
               </Col>
@@ -77,7 +89,9 @@ const PageNews = () => {
                 <Card>
                   <CardImg top width="100%" src={series} alt="Card image cap" />
                   <CardBody>
-                    <CardText>Que tal entender mais de política assistindo séries? Veja algumas séries citadas por esse artigo e a polêmica que elas geram.  <a href='https://www.politize.com.br/series-sobre-politica-2/'>Leia mais</a></CardText>
+                    <CardText>Que tal entender mais de política assistindo séries? Veja algumas séries citadas por esse artigo e a polêmica que elas geram.
+                      <StyledLink rel="noopener noreferrer" href="https://www.politize.com.br/series-sobre-politica-2/" target="_blank">Leia mais</StyledLink>.
+                      </CardText>
                   </CardBody>
                 </Card>
               </Col>
