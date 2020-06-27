@@ -18,10 +18,10 @@ const StyledCard = styled(Card)`
 `
 
 const StyledHeader = styled.header`
-  background-color: #E6E6E6;
+  background-color: #FFF9F1;
   background-image: url(${require('../images/pattern-alto.png')});
   background-size: cover;
-  background-position: center right;
+  background-position: center;
   background-repeat: no-repeat;
 `
 

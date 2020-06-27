@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { Title } from './Title'
 
 const StyledHeader = styled.header`
-  background-color: ${({theme}) => theme.lightGray};
+  background-color: #FFF9F1;
   background-image: url(${require('../images/pattern-baixo.png')});
   background-size: cover;
   background-position: center right;

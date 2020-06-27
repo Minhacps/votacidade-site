@@ -22,7 +22,7 @@ import fundoeleitoral from '../images/fundoeleitoral.png';
 // `
 
 const ElectoralCalendarStyled = styled.div`
-  background-color: #dedede;
+  background-color: #FFF9F1;
 `
 
 const StyledLink = styled.a`
