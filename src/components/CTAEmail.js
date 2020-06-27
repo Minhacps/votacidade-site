@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import styled from 'styled-components'
 
 import { Container, Row, Col, Form, FormGroup, Label, Input as ReactstrapInput } from 'reactstrap'
 
@@ -6,6 +7,15 @@ import { Button } from '../components/Button'
 import { isEmailValid, isRequiredField } from '../utils/helper'
 import { Title } from '../components/Title'
 import { Input } from '../components/Input'
+
+const SubmitButton = styled(Button)`
+  font-weight: bold;
+  color: ${({ theme }) => theme.darkGray};
+
+  &:hover {
+    color: ${({ theme }) => theme.darkGray};
+  }
+`
 
 const validators = (name, value, errors) => {
   const required = isRequiredField(value)
@@ -140,7 +150,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                   </Col>
 
                   <Col lg="3">
-                    <Button block size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
+                    <SubmitButton block size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</SubmitButton>
                   </Col>
                 </FormGroup>
               </Col>
