@@ -16,13 +16,6 @@ const StyledFooter = styled.footer`
     font-size: initial;
   }
 `
-const StyledAnchor = styled.a`
-  color: #DCDCDC;
-  &:hover{
-    color: #DAA520;
-    text-decoration: none;
-  }
-`
 
 const StyledLink = styled(Link)`
   color: #DCDCDC;
@@ -42,15 +35,17 @@ export const LowerFooter = () => (
   <StyledFooter color="#4F1778" className="py-3 py-md-4">
     <Container>
       <Row>
-        <Col className="col-12 col-md">
-          <StyledLink to="/privacidade">Política de Privacidade</StyledLink>
+        <Col xl="2" className="col">
+          <StyledLink className="mt-xl-1" to="/privacidade">Política de Privacidade</StyledLink>
         </Col>
-        <Col className="col-12 col-md pt-3 pt-sm-0">
-          <a rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+        <Col xl="2" className="col text-right">
+          <Link tag="a" rel="noopener noreferrer" to="http://creativecommons.org/licenses/by/4.0/" target="_blank">
             <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-          </a>
-          <StyledMessage>
-            Este trabalho está licenciado com uma Licença <StyledLink rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons - Atribuição  4.0 Internacional</StyledLink>.
+          </Link>
+        </Col>
+        <Col xs="12" xl="8">
+          <StyledMessage className="text-center text-xl-right d-block mt-3 mt-xl-1">
+            Este trabalho está licenciado com uma Licença <StyledLink tag="a" rel="noopener noreferrer" to="http://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons - Atribuição  4.0 Internacional</StyledLink>.
           </StyledMessage>
         </Col>
       </Row>
