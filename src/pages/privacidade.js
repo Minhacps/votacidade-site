@@ -35,108 +35,108 @@ const PrivacyPolicy = () => {
               <strong>1. Alguns termos-chave</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>2. Como esta Política de Privacidade é aplicada?</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>3. Informações pessoais que coletamos</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>4. Como coletamos informações pessoais</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>5. Como usamos suas informações pessoais</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>6. Como compartilhamos suas informações pessoais</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>7. Seus Direitos e Escolhas</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>8. Como protegemos suas informações pessoais</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>9. Como retemos suas informações pessoais</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>10. Transferência de dados</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>11. Atualizações desta Política de Privacidade</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
 
             <LongParagraph>
               <strong>12. Como entrar em contato conosco</strong>
             </LongParagraph>
             <LongParagraph>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim turpis nulla, ut suscipit mi tincidunt a.
+              Morbi aliquet maximus libero a auctor. Nam suscipit congue porttitor. Curabitur iaculis mattis pellentesque.
+              Donec fermentum lacus in suscipit facilisis. Integer gravida eu est sed tincidunt. Vivamus non massa ac nunc tincidunt scelerisque.
             </LongParagraph>
           </Col>
         </Row>
