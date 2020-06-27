@@ -36,7 +36,7 @@ export const LowerFooter = () => (
   <StyledFooter color="#4F1778" className="py-3 py-md-4">
     <Container>
       <Row>
-        <Col className="col-6 col-md">
+        <Col className="col-12 col-md">
           <StyledLink to="/privacidade">Política de Privacidade</StyledLink>
         </Col>
         <Col className="col-12 col-md pt-3 pt-sm-0">
