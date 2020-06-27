@@ -55,9 +55,9 @@ const TextDate = styled.p`
 export const DateBlock = ({ date, title, text, children }) => {
   return (
     <DateBlockStyled>
-      <Date className="mt-1 mr-2">{date}</Date>
-      <TitleDate className="mt-1">{title}</TitleDate>
-      <TextDate>{text}</TextDate>
+      <Date className="mr-2">{date}</Date>
+      <TitleDate>{title}</TitleDate>
+      {text && <TextDate>{text}</TextDate>}
     </DateBlockStyled>
   )
 }
