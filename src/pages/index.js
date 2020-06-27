@@ -17,15 +17,23 @@ const StyledCard = styled(Card)`
   box-shadow: 0px 3px 6px #00000029;
 `
 
+const StyledHeader = styled.header`
+  background-color: #E6E6E6;
+  background-image: url(${require('../images/pattern-alto.png')});
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+`
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <header style={{ backgroundColor: '#E6E6E6' }} className="pt-5 pb-5">
+    <StyledHeader className="pt-5 pb-5">
       <CTAEmail
         title='Chamada para se inscrever e ser avisado do lançamento'
         subtitle="Nosso projeto está crescendo e esse ano estaremos em 5 cidades!"
       />
-    </header>
+    </StyledHeader>
     <Container className="py-5">
       <GroupTitle
         title="como funciona"
