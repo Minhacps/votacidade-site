@@ -18,7 +18,7 @@ const StyledCard = styled(Card)`
 `
 
 const StyledHeader = styled.header`
-  background-color: #FFF9F1;
+  background-color: ${({theme}) => theme.lightSecondary};
   background-image: url(${require('../images/pattern-alto.png')});
   background-size: cover;
   background-position: center;

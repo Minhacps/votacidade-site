@@ -16,7 +16,7 @@ import CidadesCard from "../components/CidadesCard";
 import { teamMembers, cidades } from '../data';
 
 const CidadesWrapper = styled.section`
-  background-color: #FFF9F1;
+  background-color: ${({theme}) => theme.lightSecondary};
   margin-bottom: 40px;
 
   .cidades-wrapper {
