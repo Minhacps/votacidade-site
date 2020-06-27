@@ -22,14 +22,21 @@ const StyledLink = styled.a`
   }
 `
 
+const StyledMessage = styled.p`
+  margin-bottom: 0;
+  margin-left: 15px;
+  display: inline-block;
+`
+
 export const LowerFooter = () => (
   <StyledFooter color="#4F1778">
     <Container className="text-center">
       <a rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
         <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
       </a>
-      <br />Este trabalho está licenciado com uma Licença
-      <StyledLink rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons - Atribuição  4.0 Internacional</StyledLink>.
+      <StyledMessage>
+        Este trabalho está licenciado com uma Licença <StyledLink rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons - Atribuição  4.0 Internacional</StyledLink>.
+      </StyledMessage>
     </Container>
   </StyledFooter >
 )

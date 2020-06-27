@@ -27,14 +27,11 @@ const IndexPage = () => (
       />
     </header>
     <Container className="py-5">
-      <Row>
-        <Col lg="6" className="mt-5 mb-4">
-          <GroupTitle
-            title="como funciona"
-            subTitle="Chamada falando sobre dar match com o candidato!"
-          />
-        </Col>
-      </Row>
+      <GroupTitle
+        title="como funciona"
+        subTitle="Chamada falando sobre dar match com o candidato!"
+        className="mt-3 mb-5"
+      />
       <Row noGutters>
         <Col md="6" xl="3" className="pr-md-2 pr-lg-3 pr-xl-2 mb-4">
           <StyledCard>
