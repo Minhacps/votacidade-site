@@ -140,7 +140,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                   </Col>
 
                   <Col lg="3">
-                    <Button block size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
+                    <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
                   </Col>
                 </FormGroup>
               </Col>

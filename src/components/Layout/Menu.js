@@ -23,6 +23,10 @@ const StyledLink = styled(NavLink)`
   font-size: 1rem;
   color: ${({ theme }) =>  theme.darkGray} !important;
 
+  .nav-item:not(:last-child) & {
+    margin-right: 15px;
+  }
+
   &.active {
     color: ${({ theme }) =>  theme.primaryColor} !important;
   }

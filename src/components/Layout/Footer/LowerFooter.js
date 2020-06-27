@@ -32,6 +32,12 @@ const StyledLink = styled(Link)`
   }
 `
 
+const StyledMessage = styled.p`
+  margin-bottom: 0;
+  margin-left: 15px;
+  display: inline-block;
+`
+
 export const LowerFooter = () => (
   <StyledFooter color="#4F1778" className="py-3 py-md-4">
     <Container>
@@ -40,12 +46,12 @@ export const LowerFooter = () => (
           <StyledLink to="/privacidade">Política de Privacidade</StyledLink>
         </Col>
         <Col className="col-12 col-md pt-3 pt-sm-0">
-          <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+          <a rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
             <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
           </a>
-          <small class="d-block">
-            Este trabalho está licenciado sob uma <StyledAnchor rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licença Creative Commons Attribution 4.0 International</StyledAnchor>
-          </small>
+          <StyledMessage>
+            Este trabalho está licenciado com uma Licença <StyledLink rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons - Atribuição  4.0 Internacional</StyledLink>.
+          </StyledMessage>
         </Col>
       </Row>
     </Container>
