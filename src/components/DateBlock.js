@@ -3,10 +3,9 @@ import styled from 'styled-components'
 
 const DateBlockStyled = styled.div`
   display: block;
-  height: 70px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 5px;
+  padding: 0 0 30px 104px;
   position: relative;
-  padding-left: 104px;
 
   &::before,
   &::after {
@@ -27,7 +26,7 @@ const DateBlockStyled = styled.div`
   &:not(:last-child) {
     &::after {
       width: 4px;
-      height: 100%;
+      height: calc(100% + 20px);
       left: calc((104px / 2) - 2px);
     }
   }
@@ -45,17 +44,20 @@ const Date = styled.time`
 `
 const TitleDate = styled.p`
   display: inline-block;
+  margin-bottom: 7px;
 `
 const TextDate = styled.p`
-  color: black; 
   display: block;
+  color: black;
+  margin-bottom: 15px;
+  word-break: break-word;
 `
 export const DateBlock = ({ date, title, text, children }) => {
   return (
     <DateBlockStyled>
-      <Date className="mt-1 mr-2">{date}</Date>
-      <TitleDate className="mt-1">{title}</TitleDate>
-      <TextDate>{text}</TextDate>
+      <Date className="mr-2">{date}</Date>
+      <TitleDate>{title}</TitleDate>
+      {text && <TextDate>{text}</TextDate>}
     </DateBlockStyled>
   )
 }
