@@ -15,10 +15,7 @@ const StyledFooter = styled.div`
 
 const StyledButton = styled(Button)`
   min-width: 185px;
-  color: #662D91;
-  font-weight: 700;
   text-transform: uppercase;
-  font-size: 15px;
 `
 
 const ListaDeContato = styled.ul`
@@ -74,7 +71,7 @@ export const UpperFooter = ({ contatos = [], apoiadores = []}) => (
           <Title tag="h4" size="18px" color="secondaryColor">Apoie o projeto!</Title>
           <p style={{ color: '#fff' }}>O Vota Cidade foi idealizado por cinco cidades da Rede Nossas Cidades, organizações sem fins lucrativos, que tem por objetivo fortalecer e incentivar a cultura da participação em questões públicas.</p>
           <Link to="/o-projeto">
-            <StyledButton size="lg" color="secondaryColor">Saiba Mais</StyledButton>
+            <StyledButton bold light size="lg" color="secondaryColor">Saiba Mais</StyledButton>
           </Link>
         </ColFixing>
 
