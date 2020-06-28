@@ -1,16 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from 'reactstrap';
 
-import styled from 'styled-components';
-
 import { Layout } from "../components/Layout";
 import SEO from "../components/seo";
-
 import HeaderTitle from '../components/HeaderTitle';
-
-const LongParagraph = styled.p`
-  line-height: 1.7em;
-`
+import LongParagraph from '../components/Text/LongParagraph';
 
 const PrivacyPolicy = () => {
   return (
