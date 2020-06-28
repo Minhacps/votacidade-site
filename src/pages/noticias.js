@@ -17,11 +17,11 @@ import fundoeleitoral from '../images/fundoeleitoral.png';
 import { datasDoCalendario } from '../data/calendario'
 
 const ElectoralCalendarStyled = styled.div`
-  background-color: #FFF9F1;
+  background-color: ${({theme}) => theme.lightSecondary};
 `
 
 const StyledLink = styled.a`
-  color: #662D91;
+  color: ${({theme}) => theme.primaryColor};
   &:hover{
     color: #DAA520;
     text-decoration: none;

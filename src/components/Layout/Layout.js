@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const theme = {
   primaryColor: '#662D91',
   secondaryColor: '#FBB040',
+  lightSecondary: '#FFF9F1',
   darkGray: '#333',
   lightGray: '#E6E6E6',
   sucess: '#46A46C',
