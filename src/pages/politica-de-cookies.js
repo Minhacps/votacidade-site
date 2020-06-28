@@ -1,10 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from 'reactstrap';
+import styled from 'styled-components'
 
 import { Layout } from "../components/Layout";
 import SEO from "../components/seo";
 import HeaderTitle from '../components/HeaderTitle';
 import LongParagraph from '../components/Text/LongParagraph';
+
+const StyledAnchor = styled.a`
+  color: ${({theme}) => theme.primaryColor};
+  &:hover{
+    color: #4F1778;
+    text-decoration: none;
+  }
+`
 
 const CookiesPolicy = () => {
   return (
@@ -18,7 +27,7 @@ const CookiesPolicy = () => {
             <LongParagraph><strong>Data de vigência: 15 de julho de 2020</strong></LongParagraph>
             <LongParagraph>
               Esta Política de Cookies descreve como o Vota Cidade usa cookies e tecnologias similares para fornecer, personalizar, avaliar, melhorar, promover e proteger nossos Serviços.
-              Se você tiver quaisquer comentários ou perguntas sobre esta Política de Cookies, sinta-se à vontade para nos contatar em <a href="mailto:privacidade@vota.com" title="E-mail para: privacidade@vota.com">privacidade@vota.com</a>.
+              Se você tiver quaisquer comentários ou perguntas sobre esta Política de Cookies, sinta-se à vontade para nos contatar em <StyledAnchor href="mailto:privacidade@vota.com" title="E-mail para: privacidade@vota.com">privacidade@vota.com</StyledAnchor>.
             </LongParagraph>
 
             <LongParagraph>
