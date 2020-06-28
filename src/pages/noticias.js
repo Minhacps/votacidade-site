@@ -14,19 +14,14 @@ import novasregras from '../images/novasregraseleicoes.png';
 import cotasdegenero from '../images/cotasdegenero.png';
 import fundoeleitoral from '../images/fundoeleitoral.png';
 
-// const Video = styled.div`
-// position: relative;
-// top: 50%;
-// transform: translateY(-50%); 
-
-// `
+import { datasDoCalendario } from '../data/calendario'
 
 const ElectoralCalendarStyled = styled.div`
-  background-color: #dedede;
+  background-color: ${({theme}) => theme.lightSecondary};
 `
 
 const StyledLink = styled.a`
-  color: #662D91;
+  color: ${({theme}) => theme.primaryColor};
   &:hover{
     color: #DAA520;
     text-decoration: none;
@@ -49,7 +44,7 @@ const PageNews = () => {
         <Row>
           <Col md="12" lg="6" className="mb-3">
             <div className="embed-responsive embed-responsive-4by3">
-              <iframe title="Vídeo sobre as eleições 2020" className="embed-responsive-item" src="https://www.youtube.com/embed/kxfGZwFQgHM" allowfullscreen></iframe>
+              <iframe title="Vídeo sobre as eleições 2020" className="embed-responsive-item" src="https://www.youtube.com/embed/kxfGZwFQgHM" allowFullScreen></iframe>
             </div>
           </Col>
           <Col lg="6">
@@ -100,21 +95,21 @@ const PageNews = () => {
         </Row>
       </Container >
 
-      <ElectoralCalendarStyled className="mt-3 pt-5">
+      <ElectoralCalendarStyled className="mt-3 pt-5 pb-4">
         <Container>
           <GroupTitle
             title="Eleições 2020"
             subTitle="Calendário Eleitoral"
-            className="mt-2 mb-5"
+            className="mt-2 mb-4"
           />
-          <DateBlock date='20-Jul-2020' title='Início da convenções partidárias' text='' />
-          <DateBlock date='05-Ago-2020' title='Fim convenções partidárias' text='' />
-          <DateBlock date='14-Ago-2020' title='Fim do registros de candidaturas' text='' />
-          <DateBlock date='15-Ago-2020' title='Início da propaganda eleitoral' text='' />
-          <DateBlock date='19-Set-2020' title='Final do julgamento das candidaturas' text='' />
-          <DateBlock date='19-Set-2020' title='Candidatos(as) não pode ser presos' text='' />
-          <DateBlock date='04-Out-2020' title='Primeiro turno das eleições' text='' />
-          <DateBlock date='25-Out-2020' title='Segundo turno das eleições' text='' />
+          {datasDoCalendario && datasDoCalendario.map((dataCalendario) => (
+            <DateBlock
+              key={dataCalendario.date}
+              date={dataCalendario.date}
+              title={dataCalendario.title}
+              text={dataCalendario.text}
+            />
+          ))}
         </Container>
       </ElectoralCalendarStyled>
     </Layout >

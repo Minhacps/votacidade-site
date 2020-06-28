@@ -5,7 +5,7 @@ module.exports = {
     author: `@gatsbyjs`,
     menuLinks: [
       {
-         name: 'Home',
+         name: 'Inicial',
          link: '/'
       },
       {

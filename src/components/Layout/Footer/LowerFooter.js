@@ -32,6 +32,12 @@ const StyledLink = styled(Link)`
   }
 `
 
+const StyledMessage = styled.p`
+  margin-bottom: 0;
+  margin-left: 15px;
+  display: inline-block;
+`
+
 export const LowerFooter = () => (
   <StyledFooter color="#4F1778" className="py-3 py-md-4">
     <Container>
