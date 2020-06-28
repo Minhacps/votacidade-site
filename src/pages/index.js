@@ -27,7 +27,7 @@ const StyledHeader = styled.header`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Inicial" />
     <StyledHeader className="pt-5 pb-5">
       <CTAEmail
         title='Chamada para se inscrever e ser avisado do lançamento'

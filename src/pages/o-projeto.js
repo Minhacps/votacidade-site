@@ -32,7 +32,7 @@ const CidadesWrapper = styled.section`
 const PageProject = () => {
   return (
     <Layout>
-      <SEO title="Page Project" />
+      <SEO title="O Projeto" />
       <HeaderTitle
         title="O Projeto"
       />
