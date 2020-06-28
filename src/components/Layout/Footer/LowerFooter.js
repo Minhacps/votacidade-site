@@ -16,14 +16,6 @@ const StyledFooter = styled.footer`
     font-size: initial;
   }
 `
-const StyledAnchor = styled.a`
-  color: #DCDCDC;
-  &:hover{
-    color: #DAA520;
-    text-decoration: none;
-  }
-`
-
 const StyledLink = styled(Link)`
   color: #DCDCDC;
   &:hover{
@@ -31,11 +23,12 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `
-
-const StyledMessage = styled.p`
-  margin-bottom: 0;
-  margin-left: 15px;
-  display: inline-block;
+const StyledAnchor = styled.a`
+  color: #DCDCDC;
+  &:hover{
+    color: #DAA520;
+    text-decoration: none;
+  }
 `
 
 export const LowerFooter = () => (
@@ -45,12 +38,12 @@ export const LowerFooter = () => (
         <Col className="col-12 col-md">
           <StyledLink to="/privacidade">Política de Privacidade</StyledLink>
         </Col>
-        <Col className="col-12 col-md pt-3 pt-sm-0">
+        <Col className="col-12 col-md pt-3 pt-md-0">
           <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
             <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
           </a>
-          <small class="d-block">
-            Este trabalho está licenciado sob uma <StyledAnchor rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licença Creative Commons Attribution 4.0 International</StyledAnchor>
+          <small class="mt-1 d-block">
+            Este trabalho está licenciado sob uma <StyledAnchor rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/">Licença Creative Commons Attribution 4.0 International</StyledAnchor>
           </small>
         </Col>
       </Row>
