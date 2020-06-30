@@ -5,16 +5,16 @@ module.exports = {
     author: `@gatsbyjs`,
     menuLinks: [
       {
-         name: 'Inicial',
-         link: '/'
+        name: 'Inicial',
+        link: '/'
       },
       {
-         name: 'O Projeto',
-         link: '/o-projeto'
+        name: 'O Projeto',
+        link: '/o-projeto'
       },
       {
-         name: 'Notícias',
-         link: '/noticias'
+        name: 'Notícias',
+        link: '/noticias'
       },
     ]
   },
@@ -50,6 +50,12 @@ module.exports = {
         ],
         display: 'swap'
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-170993659-1", // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+      },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
