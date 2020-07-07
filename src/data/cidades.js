@@ -1,7 +1,7 @@
 export const cidades = [
   {
     title: 'Campinas',
-    image: 'https://www.livehere.com.br/blog/wp-content/uploads/2019/05/morar-em-campinas-990x556.jpg',
+    image: require('../images/photos_city/campinas-fundo.jpg'),
     linkTo: 'https://www.minhacampinas.org.br/#block-6218',
   },
   {
