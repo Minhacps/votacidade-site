@@ -38,18 +38,18 @@ const PageProject = () => {
       />
       <ProjectDetails
         miniTitle={"conheça o projeto"}
-        title={"Chamada falando sobre a iniciativa"}
-        text={"Nesse texto podemos falar sobre o projeto, a iniciativa e as organizações que fazem parte disso. Aqui pode entrar até algum texto bem elaborado para dar introdução a contribuição em dinheiro. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+        title={"Encontre um candidato que realmente te representa"}
+        text={"O Vota Cidade é uma ferramenta para a população de Campina Grande (PB), Campinas (SP), João Pessoa (PB), Porto Alegre (RS) e Recife (PE) encontrar candidatos(as) a vereador(a) que pensam parecido nas eleições de 2020. O legislativo tem centenas, e até milhares, de candidatos(as), o que dificulta encontrar alguém que realmente represente a diversidade das cidades. Por isso, o Vota cruza as respostas do(a) eleitor(a) com os(as) candidatos(as) cadastrados(as), mostrando a lista por ordem de afinidade em alguns minutos. Assim, você escolhe alguém que pensa parecido e pode cobrar melhor depois!"}
       />
       <ProjectDetails
         miniTitle={"ajude o projeto"}
-        title={"Chamada sobre serem organizações sem fins lucrativos"}
-        text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+        title={"Em busca de eleições cada vez mais democráticas!"}
+        text={"Colabore com o Vota! Para garantir as redes de mobilização das 5 cidades que vão fazer o Vota chegar em 2600 candidatas(os) a vereador(a) e nos mais de 3 milhões de eleitores(as), precisamos da sua doação. As 160 cadeiras que estão em jogo, definirão as políticas que impactam a vida de milhares de pessoas. Escolha a sua cidade e construa eleições com participação ativa da sociedade civil e eleitores(as) mais conscientes do seu voto!"}
         style={{ backgroundColor: '#FFF9F1'}}
       />
       <CidadesWrapper>
         <Container>
-          <Row className="cidades-wrapper" xs="2" sm="3" md="4" lg="5" noGutters>
+          <Row className="cidades-wrapper mt-3" xs="2" sm="3" md="4" lg="5" noGutters>
             {cidades
               .sort(alfabeticOrder('title'))
               .map(CidadesCard)}
