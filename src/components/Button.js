@@ -20,6 +20,6 @@ const StyledButton = styled(BootButton)`
   }
 `
 
-export const Button = ({ children, bold, light, ...props }) => (
+export const Button = ({ children, ...props }) => (
   <StyledButton {...props}>{children}</StyledButton>
 );
