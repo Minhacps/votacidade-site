@@ -36,7 +36,7 @@ export const LowerFooter = () => (
     <Container>
       <Row>
         <Col className="col-12 col-md">
-          <ul class="list-unstyled text-small">
+          <ul className="list-unstyled text-small">
             <li>
               <StyledLink to="/privacidade">Política de Privacidade</StyledLink>
             </li>
@@ -49,7 +49,7 @@ export const LowerFooter = () => (
           <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
             <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
           </a>
-          <small class="mt-1 d-block">
+          <small className="mt-1 d-block">
             Este trabalho está licenciado sob uma <StyledAnchor rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/">Licença Creative Commons Attribution 4.0 International</StyledAnchor>
           </small>
         </Col>
