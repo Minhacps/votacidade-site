@@ -10,7 +10,6 @@ import { getColor } from '../../../utils/styles'
 
 const StyledFooter = styled.div`
   background-color: ${getColor};
-  padding: 35px 0;
 `
 
 const StyledButton = styled(Button)`
@@ -23,23 +22,10 @@ const ListaDeContato = styled.ul`
   list-style: none;
   color: #fff;
 
-  @media (min-width: 992px) and (max-width: 1200px) {
-    strong {
-      display: block;
-    }
-  }
-
   strong::after {
     content: '|';
     display: inline-block;
     margin-left: 5px;
-  }
-`
-
-const ColFixing = styled(Col)`
-  @media (min-width: 1200px) {
-    margin-left: -90px;
-    margin-right: -5px;
   }
 `
 
