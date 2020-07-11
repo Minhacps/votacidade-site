@@ -37,7 +37,7 @@ const IndexPage = () => (
     <Container className="py-5">
       <GroupTitle
         title="como funciona"
-        subTitle="Chamada falando sobre dar match com o candidato!"
+        subTitle="Te mostramos uma lista dos candidatos(as) que pensam parecido com você"
         className="mt-3 mb-5"
       />
       <Row noGutters>
