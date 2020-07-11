@@ -49,10 +49,9 @@ const Contato = ({ cidade, contato }, index) => (
   </li>
 )
 
-const Apoiadores = (apoiador, index) => (
-  <Col key={`apoiador-${index}`} xs="4" lg="6" xl="4" className="mb-3" style={{ display: 'flex',
-    justifyContent: 'center' ,alignItems: 'center' }}>
-    <img src={apoiador.logo} alt={`${apoiador.nome} logo`} style={{ maxWidth: '100%', display: 'block', margin: 'auto' }} />
+const Partnership = (partner, index) => (
+  <Col key={`partner-${index}`} xs="4" sm="3" className="mb-3">
+    <img src={partner.logo} alt={`Logotipo ${partner.nome}`} title={partner.nome} className="img-fluid d-block mx-auto" />
   </Col>
 )
 
@@ -77,7 +76,7 @@ export const UpperFooter = ({ contatos = [], makers = []}) => (
 
         <Col sm="12" lg="4" xl="4">
           <Row>
-            {makers.map(Apoiadores)}
+            {makers.map(Partnership)}
           </Row>
         </Col>
       </Row>
