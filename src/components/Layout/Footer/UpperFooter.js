@@ -56,7 +56,7 @@ const Apoiadores = (apoiador, index) => (
   </Col>
 )
 
-export const UpperFooter = ({ contatos = [], apoiadores = []}) => (
+export const UpperFooter = ({ contatos = [], makers = []}) => (
   <StyledFooter>
     <Container>
       <Row>
@@ -77,7 +77,7 @@ export const UpperFooter = ({ contatos = [], apoiadores = []}) => (
 
         <Col sm="12" lg="4" xl="4">
           <Row>
-            {apoiadores.map(Apoiadores)}
+            {makers.map(Apoiadores)}
           </Row>
         </Col>
       </Row>
