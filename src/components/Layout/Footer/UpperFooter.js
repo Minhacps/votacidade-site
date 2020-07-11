@@ -55,28 +55,39 @@ const Partnership = (partner, index) => (
   </Col>
 )
 
-export const UpperFooter = ({ contatos = [], makers = []}) => (
-  <StyledFooter>
+export const UpperFooter = ({ contatos = [], makers = [], supporters = []}) => (
+  <StyledFooter className="py-3">
     <Container>
-      <Row>
-        <Col sm="12" lg="4" xl="5">
-          <Title tag="h4" size="18px" color="secondaryColor">Contato</Title>
+      <Row className="mt-3">
+        <Col xs="12" lg="6">
+          <Title tag="h4" size="1.1em" color="secondaryColor">Contato</Title>
           <ListaDeContato>
             {contatos.map(Contato)}
           </ListaDeContato>
         </Col>
 
-        <ColFixing sm="12" lg="4" xl="4" className="mb-4">
-          <Title tag="h4" size="18px" color="secondaryColor">Apoie o projeto!</Title>
+        <Col xs="12" lg="6">
+          <Title tag="h4" size="1.1em" color="secondaryColor">Apoie o projeto!</Title>
           <p style={{ color: '#fff' }}>O Vota Cidade foi idealizado por cinco cidades da Rede Nossas Cidades, organizações sem fins lucrativos, que tem por objetivo fortalecer e incentivar a cultura da participação em questões públicas.</p>
           <Link to="/o-projeto">
             <StyledButton bold light size="lg" color="secondaryColor">Saiba Mais</StyledButton>
           </Link>
-        </ColFixing>
+        </Col>
+      </Row>
 
-        <Col sm="12" lg="4" xl="4">
-          <Row>
+      <hr />
+
+      <Row>
+        <Col xs="12" lg="6">
+          <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">Realização</Title>
+          <Row className="align-items-center">
             {makers.map(Partnership)}
+          </Row>
+        </Col>
+        <Col xs="12" lg="6" className="mt-3 mt-lg-0">
+          <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">Apoio</Title>
+          <Row className="align-items-center">
+            {supporters.map(Partnership)}
           </Row>
         </Col>
       </Row>
