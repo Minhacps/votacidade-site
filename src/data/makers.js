@@ -1,4 +1,4 @@
-export const apoiadores = [
+export const makers = [
   {
     nome: 'Front Campinas',
     logo: require('../images/logo-front-campinas.svg'),
