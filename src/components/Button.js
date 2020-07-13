@@ -5,7 +5,7 @@ import { Button as BootButton } from 'reactstrap';
 
 import { getColor } from '../utils/styles'
 
-const StyledButton = styled(BootButton)`
+const StyledButton =  styled(({ light, bold, ...props }) => <BootButton {...props} />)`
   background-color: ${getColor};
   transition: filter .2s;
   will-change: filter, color;
