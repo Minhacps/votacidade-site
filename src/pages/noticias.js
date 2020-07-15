@@ -107,14 +107,13 @@ const PageNews = () => {
             subTitle="Calendário Eleitoral"
             className="mt-2 mb-5"
           />
-          <DateBlock date='20-Jul-2020' title='Início da convenções partidárias' text='' />
-          <DateBlock date='05-Ago-2020' title='Fim convenções partidárias' text='' />
-          <DateBlock date='14-Ago-2020' title='Fim do registros de candidaturas' text='' />
-          <DateBlock date='15-Ago-2020' title='Início da propaganda eleitoral' text='' />
-          <DateBlock date='19-Set-2020' title='Final do julgamento das candidaturas' text='' />
-          <DateBlock date='19-Set-2020' title='Candidatos(as) não pode ser presos' text='' />
-          <DateBlock date='04-Out-2020' title='Primeiro turno das eleições' text='' />
-          <DateBlock date='25-Out-2020' title='Segundo turno das eleições' text='' />
+          <DateBlock date='31-Ago-2020' title='Início da convenções partidárias' text='' />
+          <DateBlock date='31-Ago-2020' title='Início da registros de candidaturas' text='' />
+          <DateBlock date='16-Set-2020' title='Fim convenções partidárias' text='' />
+          <DateBlock date='26-Set-2020' title='Fim do registros de candidaturas' text='' />
+          <DateBlock date='27-Set-2020' title='Início da propaganda eleitoral' text='' />
+          <DateBlock date='15-Nov-2020' title='Primeiro turno das eleições' text='' />
+          <DateBlock date='29-Nov-2020' title='Segundo turno das eleições' text='' />
         </Container>
       </ElectoralCalendarStyled>
     </Layout >
