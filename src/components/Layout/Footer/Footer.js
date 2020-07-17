@@ -1,12 +1,13 @@
 import React from 'react'
 
 import { UpperFooter, LowerFooter } from './'
-import { apoiadores, contatos } from '../../../data'
+import { makers, supporters, contatos } from '../../../data'
 
 export const Footer = () => (
   <footer>
     <UpperFooter
-      apoiadores={apoiadores}
+      makers={makers}
+      supporters={supporters}
       contatos={contatos}
     />
     <LowerFooter />

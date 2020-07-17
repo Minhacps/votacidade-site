@@ -5,7 +5,7 @@ import { Input as ReactstrapInput, FormGroup, FormFeedback } from 'reactstrap'
 
 const StyledInput = styled(ReactstrapInput)`
   border-radius: 10px;
-  border: 0;
+  border: 1px solid lightgray;
   font-size: 16px;
   appearance: none;
 

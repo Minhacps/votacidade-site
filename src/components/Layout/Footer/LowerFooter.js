@@ -1,10 +1,12 @@
 import React from 'react'
-import { Container } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 import styled from 'styled-components'
+
+import { Link } from '../../../components/Link';
 
 import { getColor } from '../../../utils/styles'
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   background-color: ${getColor};
   padding: 15px 0;
   color: #fff;
@@ -14,8 +16,15 @@ const StyledFooter = styled.div`
     font-size: initial;
   }
 `
-const StyledLink = styled.a`
-  color: #FBB040;
+const StyledLink = styled(Link)`
+  color: #DCDCDC;
+  &:hover{
+    color: #DAA520;
+    text-decoration: none;
+  }
+`
+const StyledAnchor = styled.a`
+  color: #DCDCDC;
   &:hover{
     color: #DAA520;
     text-decoration: none;
@@ -23,20 +32,28 @@ const StyledLink = styled.a`
 `
 
 export const LowerFooter = () => (
-  <StyledFooter color="#4F1778">
-    <Container className="text-center">
-      <a rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
-        <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-      </a>
-      <br />Este trabalho está licenciado com uma Licença
-      <StyledLink rel="noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons - Atribuição  4.0 Internacional</StyledLink>.
+  <StyledFooter color="#4F1778" className="py-3 py-md-4">
+    <Container>
+      <Row>
+        <Col className="col-12 col-md">
+          <ul className="list-unstyled text-small">
+            <li>
+              <StyledLink to="/privacidade">Política de Privacidade</StyledLink>
+            </li>
+            <li>
+              <StyledLink to="/politica-de-cookies">Política de Cookies</StyledLink>
+            </li>
+          </ul>
+        </Col>
+        <Col className="col-12 col-md">
+          <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+            <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+          </a>
+          <small className="mt-1 d-block">
+            Este trabalho está licenciado sob uma <StyledAnchor rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/">Licença Creative Commons Attribution 4.0 International</StyledAnchor>
+          </small>
+        </Col>
+      </Row>
     </Container>
-  </StyledFooter >
-)
-
-
-/*
-
- © {new Date().getFullYear()} Todos os direitos reservados a <strong>Vota Cidade</strong>
-
-*/
+  </StyledFooter>
+);
