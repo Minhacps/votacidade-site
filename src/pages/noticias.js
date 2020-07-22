@@ -17,11 +17,11 @@ import fundoeleitoral from '../images/fundoeleitoral.png';
 import { datasDoCalendario } from '../data/calendario'
 
 const ElectoralCalendarStyled = styled.div`
-  background-color: ${({theme}) => theme.lightSecondary};
+  background-color: ${({ theme }) => theme.lightSecondary};
 `
 
 const StyledLink = styled.a`
-  color: ${({theme}) => theme.primaryColor};
+  color: ${({ theme }) => theme.primaryColor};
   &:hover{
     color: #DAA520;
     text-decoration: none;
@@ -44,8 +44,9 @@ const PageNews = () => {
         <Row>
           <Col md="12" lg="6" className="mb-3">
             <div className="embed-responsive embed-responsive-4by3">
-              <iframe title="Vídeo sobre as eleições 2020" className="embed-responsive-item" src="https://www.youtube.com/embed/kxfGZwFQgHM" allowFullScreen></iframe>
+              <iframe title="Vídeo sobre as eleições 2020" className="embed-responsive-item" src="https://www.youtube.com/embed/WnG_UIkYDms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+
           </Col>
           <Col lg="6">
             <Row>
