@@ -45,7 +45,7 @@ const PageNews = () => {
           <Col md="12" lg="6" className="mb-3">
             <div className="embed-responsive embed-responsive-4by3">
               <iframe title="Vídeo sobre as eleições 2020" className="embed-responsive-item" src="https://www.youtube.com/embed/WnG_UIkYDms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            </div> 
 
           </Col>
           <Col lg="6">
