@@ -36,12 +36,12 @@ const Contato = ({ cidade, contato }, index) => (
 )
 
 const Partnership = (partner, index) => (
-  <Col key={`partner-${index}`} xs="4" sm="3" className="mb-3">
+  <Col key={`partner-${index}`} xs="4" sm="3" md="2" className="mb-3">
     <img src={partner.logo} alt={`Logotipo ${partner.nome}`} title={partner.nome} className="img-fluid d-block mx-auto" />
   </Col>
 )
 
-export const UpperFooter = ({ contatos = [], makers = [], supporters = []}) => (
+export const UpperFooter = ({ contatos = [], makers = [], supporters = [] }) => (
   <StyledFooter className="py-3">
     <Container>
       <Row className="mt-3">
@@ -64,16 +64,21 @@ export const UpperFooter = ({ contatos = [], makers = [], supporters = []}) => (
       <hr />
 
       <Row>
-        <Col xs="12" lg="6">
+        <Col xs="12" lg="10">
           <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">Realização</Title>
           <Row className="align-items-center">
             {makers.map(Partnership)}
           </Row>
         </Col>
-        <Col xs="12" lg="6" className="mt-3 mt-lg-0">
+        <Col xs="12" lg="2">
           <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">Apoio</Title>
           <Row className="align-items-center">
-            {supporters.map(Partnership)}
+            {supporters.map(supporter => {
+              return (
+                <Col key={supporter} xs="4" sm="3" md="2" lg="12" className="mb-3">
+                  <img src={supporter.logo} alt={`Logotipo ${supporter.nome}`} title={supporter.nome} className="img-fluid d-block mx-auto" />
+                </Col>)
+            })}
           </Row>
         </Col>
       </Row>
