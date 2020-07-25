@@ -30,7 +30,7 @@ const IndexPage = () => (
     <SEO title="Inicial" />
     <StyledHeader className="pt-5 pb-5">
       <CTAEmail
-        title='Chamada para se inscrever e ser avisado do lançamento'
+        title='Inscreva-se e saiba em primeira mão do lançamento!'
         subtitle="Nosso projeto está crescendo e esse ano estaremos em 5 cidades!"
       />
     </StyledHeader>
