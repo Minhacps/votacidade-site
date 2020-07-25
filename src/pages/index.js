@@ -46,7 +46,7 @@ const IndexPage = () => (
             <CardImg top width="100%" src={require('../images/como-funciona.png')} alt="Como funciona" />
             <CardBody>
               <CardTitle><Title size="24px">Como funciona?</Title></CardTitle>
-              <CardText>Você responde um questionário de XX perguntas, com questões variadas sobre políticas públicas como transporte, saneamento básico, drogas, etc.</CardText>
+              <CardText>Você responde um questionário de 30 perguntas, com questões variadas sobre políticas públicas como transporte, saneamento básico, drogas, etc.</CardText>
             </CardBody>
           </StyledCard>
         </Col>
