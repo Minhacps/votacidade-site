@@ -46,7 +46,7 @@ const IndexPage = () => (
             <CardImg top width="100%" src={require('../images/como-funciona.png')} alt="Como funciona" />
             <CardBody>
               <CardTitle><Title size="24px">Como funciona?</Title></CardTitle>
-              <CardText>Você responde um questionário de 30 perguntas, com questões variadas sobre políticas públicas como transporte, saneamento básico, drogas, etc.</CardText>
+              <CardText>Você responderá um questionário de 30 perguntas, com questões variadas sobre políticas públicas como transporte, saneamento básico, drogas, etc.</CardText>
             </CardBody>
           </StyledCard>
         </Col>
@@ -55,7 +55,7 @@ const IndexPage = () => (
             <CardImg top width="100%" src={require('../images/afinidade.png')} alt="Afinidade" />
             <CardBody>
               <CardTitle><Title size="24px">Afinidade</Title></CardTitle>
-              <CardText>Nós cruzamos as suas respostas com os candidatos e candidatas cadastradas e te mostramos quem pensa parecido com você!</CardText>
+              <CardText>Nós cruzaremos as suas respostas com os candidatos e candidatas cadastradas e te mostraremos quem pensa parecido com você!</CardText>
             </CardBody>
           </StyledCard>
         </Col>
@@ -64,7 +64,7 @@ const IndexPage = () => (
             <CardImg top width="100%" src={require('../images/quero-mais.png')} alt="Quero mais" />
             <CardBody>
               <CardTitle><Title size="24px">Quero mais!</Title></CardTitle>
-              <CardText>Você pode pesquisar e acessar o perfil de qualquer candidato ou candidata cadastrada para ver as respostas, comparar e tomar a sua decisão final.</CardText>
+              <CardText>Você poderá pesquisar e acessar o perfil de qualquer candidato ou candidata cadastrada para ver as respostas, comparar e tomar a sua decisão.</CardText>
             </CardBody>
           </StyledCard>
         </Col>
@@ -73,7 +73,7 @@ const IndexPage = () => (
             <CardImg top width="100%" src={require('../images/seguranca-dos-dados.png')} alt="Segurança dos Dados" />
             <CardBody>
               <CardTitle><Title size="24px">E os dados?</Title></CardTitle>
-              <CardText>Nós nos preocupamos e respeitamos muito seus dados e por isso te damos a opção de responder o questionário de forma anônima.</CardText>
+              <CardText>Nós nos preocupamos e respeitamos muito seus dados e por isso daremos a opção de responder o questionário de forma anônima.</CardText>
             </CardBody>
           </StyledCard>
         </Col>
