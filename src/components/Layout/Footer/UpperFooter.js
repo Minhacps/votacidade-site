@@ -1,16 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import { Container, Row, Col } from 'reactstrap'
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
+import { Link as LinkLogo } from "../../Link"
+import { Container, Row, Col } from "reactstrap"
 
-import { Title } from '../../Title'
-import { Button } from '../../Button'
+import { Title } from "../../Title"
+import { Button } from "../../Button"
 
-import { getColor } from '../../../utils/styles'
+import { getColor } from "../../../utils/styles"
 
 const StyledFooter = styled.div`
   background-color: ${getColor};
-  padding: 35px 0;
 `
 
 const StyledButton = styled(Button)`
@@ -23,23 +23,10 @@ const ListaDeContato = styled.ul`
   list-style: none;
   color: #fff;
 
-  @media (min-width: 992px) and (max-width: 1200px) {
-    strong {
-      display: block;
-    }
-  }
-
   strong::after {
-    content: '|';
+    content: "|";
     display: inline-block;
     margin-left: 5px;
-  }
-`
-
-const ColFixing = styled(Col)`
-  @media (min-width: 1200px) {
-    margin-left: -90px;
-    margin-right: -5px;
   }
 `
 
@@ -49,35 +36,87 @@ const Contato = ({ cidade, contato }, index) => (
   </li>
 )
 
-const Apoiadores = (apoiador, index) => (
-  <Col key={`apoiador-${index}`} xs="4" lg="6" xl="4" className="mb-3" style={{ display: 'flex',
-    justifyContent: 'center' ,alignItems: 'center' }}>
-    <img src={apoiador.logo} alt={`${apoiador.nome} logo`} style={{ maxWidth: '100%', display: 'block', margin: 'auto' }} />
+const Partnership = (partner, index) => (
+  <Col key={`partner-${index}`} xs="4" sm="3" md="2" className="mb-3">
+    <LinkLogo tag="a" href={partner.link}>
+      <img
+        src={partner.logo}
+        alt={`Logotipo ${partner.nome}`}
+        title={partner.nome}
+        className="img-fluid d-block mx-auto"
+      />
+    </LinkLogo>
   </Col>
 )
 
-export const UpperFooter = ({ contatos = [], apoiadores = []}) => (
-  <StyledFooter>
+export const UpperFooter = ({
+  contatos = [],
+  makers = [],
+  supporters = [],
+}) => (
+  <StyledFooter className="py-3">
     <Container>
-      <Row>
-        <Col sm="12" lg="4" xl="5">
-          <Title tag="h4" size="18px" color="secondaryColor">Contato</Title>
-          <ListaDeContato>
-            {contatos.map(Contato)}
-          </ListaDeContato>
+      <Row className="mt-3">
+        <Col xs="12" lg="6">
+          <Title tag="h4" size="1.1em" color="secondaryColor">
+            Contato
+          </Title>
+          <ListaDeContato>{contatos.map(Contato)}</ListaDeContato>
         </Col>
 
-        <ColFixing sm="12" lg="4" xl="4" className="mb-4">
-          <Title tag="h4" size="18px" color="secondaryColor">Apoie o projeto!</Title>
-          <p style={{ color: '#fff' }}>O Vota Cidade foi idealizado por cinco cidades da Rede Nossas Cidades, organizações sem fins lucrativos, que tem por objetivo fortalecer e incentivar a cultura da participação em questões públicas.</p>
+        <Col xs="12" lg="6">
+          <Title tag="h4" size="1.1em" color="secondaryColor">
+            Apoie o projeto!
+          </Title>
+          <p style={{ color: "#fff" }}>
+            O Vota Cidade foi idealizado por cinco cidades da Rede Nossas
+            Cidades, organizações sem fins lucrativos, que tem por objetivo
+            fortalecer e incentivar a cultura da participação em questões
+            públicas.
+          </p>
           <Link to="/o-projeto">
-            <StyledButton bold light size="lg" color="secondaryColor">Saiba Mais</StyledButton>
+            <StyledButton bold light size="lg" color="secondaryColor">
+              Saiba Mais
+            </StyledButton>
           </Link>
-        </ColFixing>
+        </Col>
+      </Row>
 
-        <Col sm="12" lg="4" xl="4">
-          <Row>
-            {apoiadores.map(Apoiadores)}
+      <hr />
+
+      <Row>
+        <Col xs="12" lg="10">
+          <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">
+            Realização
+          </Title>
+          <Row className="align-items-center">{makers.map(Partnership)}</Row>
+        </Col>
+        <Col xs="12" lg="2">
+          <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">
+            Apoio
+          </Title>
+          <Row className="align-items-center">
+            {supporters.map(supporter => {
+              return (
+                <Col
+                  key={supporter}
+                  xs="4"
+                  sm="3"
+                  md="2"
+                  lg="12"
+                  className="mb-3"
+                >
+                  <LinkLogo tag="a" href={supporter.link}>
+                    <img
+                      src={supporter.logo}
+                      alt={`Logotipo ${supporter.nome}`}
+                      title={supporter.nome}
+                      className="img-fluid d-block mx-auto"
+                    />
+                  </LinkLogo>
+                </Col>
+              )
+            })}
           </Row>
         </Col>
       </Row>
