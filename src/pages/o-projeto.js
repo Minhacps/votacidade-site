@@ -22,9 +22,13 @@ const CidadesWrapper = styled.section`
   .cidades-wrapper {
     display: flex;
     transform: translateY(-50px);
+  }
 
-    @media (min-width: 800px) {
-      transform: translateY(-80px);
+  @media (min-width: 800px) {
+    margin-top: -20px;
+
+    .cidades-wrapper {
+      transform: translateY(-60px);
     }
   }
 `
