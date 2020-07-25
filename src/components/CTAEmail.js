@@ -86,7 +86,7 @@ export const CTAEmail = ({ title, subtitle }) => {
           {subtitle && <Title tag="h3" color="#959595" className="h4">{subtitle}</Title>}
         </Col>
         <Col lg={{ size: 10, offset: 1 }}>
-          <Form target="_blank" method="POST" action="" onSubmit={submit}>
+          <Form target="_blank" method="POST" action="https://gmail.us10.list-manage.com/subscribe/post?u=145b9e413ba4cf4f138b21c21&amp;id=956113fd98" onSubmit={submit}>
             <Row form>
               <Col lg="5">
                 <Input
