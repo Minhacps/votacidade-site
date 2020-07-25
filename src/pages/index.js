@@ -41,7 +41,7 @@ const IndexPage = () => (
         className="mt-3 mb-5"
       />
       <Row noGutters>
-        <Col md="6" xl="3" className="pr-md-2 pr-lg-3 pr-xl-2 mb-4">
+        <Col md="6" xl="3" className="pr-md-2 pr-lg-3 pr-xl-2 mb-4 d-flex align-items-stretch">
           <StyledCard>
             <CardImg top width="100%" src={require('../images/como-funciona.png')} alt="Como funciona" />
             <CardBody>
@@ -50,7 +50,7 @@ const IndexPage = () => (
             </CardBody>
           </StyledCard>
         </Col>
-        <Col md="6" xl="3" className="pl-md-2 pl-lg-3 px-xl-2 mb-4">
+        <Col md="6" xl="3" className="pl-md-2 pl-lg-3 px-xl-2 mb-4 d-flex align-items-stretch">
           <StyledCard>
             <CardImg top width="100%" src={require('../images/afinidade.png')} alt="Afinidade" />
             <CardBody>
@@ -59,7 +59,7 @@ const IndexPage = () => (
             </CardBody>
           </StyledCard>
         </Col>
-        <Col md="6" xl="3" className="pr-md-2 pr-lg-3 px-xl-2 mb-4">
+        <Col md="6" xl="3" className="pr-md-2 pr-lg-3 px-xl-2 mb-4 d-flex align-items-stretch">
           <StyledCard>
             <CardImg top width="100%" src={require('../images/quero-mais.png')} alt="Quero mais" />
             <CardBody>
@@ -68,7 +68,7 @@ const IndexPage = () => (
             </CardBody>
           </StyledCard>
         </Col>
-        <Col md="6" xl="3" className="pl-md-2 pl-lg-3 pl-xl-2 mb-4">
+        <Col md="6" xl="3" className="pl-md-2 pl-lg-3 pl-xl-2 mb-4 d-flex align-items-stretch">
           <StyledCard>
             <CardImg top width="100%" src={require('../images/seguranca-dos-dados.png')} alt="Segurança dos Dados" />
             <CardBody>
