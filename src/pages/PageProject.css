@@ -1,0 +1,15 @@
+.PageProjectHeader{
+    height: 124px;    
+    background-color: #DEDEDE;
+    width: 100%;
+    font: Bold 24px/29px Roboto;
+    color: #959595;
+}
+
+.PageProjectHeader .title{
+    display: block;
+    width: 100%;
+    /* margin: 30px auto ; */
+    padding: 30px;
+    height: 124px; 
+}

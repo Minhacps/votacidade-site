@@ -1,17 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Vota Cidade`,
+    description: `Classificação de afinidade entre eleitores(as) e candidatos(as) para as eleições 2020.`,
     author: `@gatsbyjs`,
     menuLinks: [
       {
-         name:'home',
-         link:'/'
+        name: 'Inicial',
+        link: '/'
       },
       {
-         name:'page2',
-         link:'/page-2'
-      }
+        name: 'O Projeto',
+        link: '/o-projeto'
+      },
+      {
+        name: 'Notícias',
+        link: '/noticias'
+      },
     ]
   },
   plugins: [
@@ -35,18 +39,23 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/votacidades-icon-32x32.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Roboto`,
-          `300,700` // you can also specify font weights and styles
+          `Roboto:300,700,900` // you can also specify font weights and styles
         ],
         display: 'swap'
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-170993659-1", // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+      },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
