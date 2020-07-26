@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Vota Cidade`,
-    description: `Classificação de afinidade entre eleitores(as) e candidatos(as) para as eleições 2020.`,
+    description: `No tinder das eleições, combine com quem te representa!`,
     author: `@gatsbyjs`,
+    siteUrl: 'http://vota.org.br',
+    facebookAppId: '3134317763316448',
+    ogImageType: 'image/jpg',
+    ogImageWidth: '512',
+    ogImageHeight: '337',
     menuLinks: [
       {
         name: 'Inicial',
