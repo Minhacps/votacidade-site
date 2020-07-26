@@ -99,7 +99,7 @@ export const UpperFooter = ({
             {supporters.map(supporter => {
               return (
                 <Col
-                  key={supporter}
+                  key={supporter.nome}
                   xs="4"
                   sm="3"
                   md="2"
