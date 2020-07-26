@@ -88,13 +88,23 @@ const PageNews = () => {
               <Col md="6" className="mb-4 d-flex align-items-stretch">
                 <Card>
                   <CardBody className="d-flex flex-column">
+                    <Title className="h4" style={{ marginBottom: 0 }}>Guia do Eleitor</Title>
+                    <TagAutor>Material por: Casa Hacker</TagAutor>
+                    <CardText>Saiba o que as empresas de redes sociais e os políticos estão fazendo com os seus dados. </CardText>
+                    <StyledLink rel="noopener noreferrer" href="https://casahacker.org/guiadoeleitor" target="_blank">Leia mais</StyledLink>
+                  </CardBody>
+                </Card>
+              </Col>
+              {/* <Col md="6" className="mb-4 d-flex align-items-stretch">
+                <Card>
+                  <CardBody className="d-flex flex-column">
                     <Title className="h4" style={{ marginBottom: 0 }}>5 séries sobre política</Title>
                     <TagAutor>Material por: Politize</TagAutor>
                     <CardText>Que tal entender mais de política assistindo séries? Veja algumas séries citadas por esse artigo e a polêmica que elas geram.  </CardText>
                     <StyledLink rel="noopener noreferrer" href="https://www.politize.com.br/series-sobre-politica-2/" target="_blank">Leia mais</StyledLink>
                   </CardBody>
                 </Card>
-              </Col>
+              </Col> */}
             </Row>
           </Col>
         </Row>
