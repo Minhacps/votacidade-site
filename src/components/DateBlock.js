@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const DateBlockStyled = styled.div`
   display: block;
   margin: 0px 5px;
-  padding: 0 0 30px 104px;
+  padding: 0 0 30px 56px;
   position: relative;
 
   &::before,
@@ -20,13 +20,23 @@ const DateBlockStyled = styled.div`
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    left: calc((104px / 2) - 12px);
+    left: calc((50px / 2) - 12px);
   }
 
-  &:not(:last-child) {
-    &::after {
-      width: 4px;
-      height: calc(100% + 20px);
+  &:not(:last-child)::after {
+    width: 4px;
+    height: calc(100% + 20px);
+    left: calc((50px / 2) - 2px);
+  }
+
+  @media (min-width: 600px) {
+    padding-left: 104px;
+
+    &::before {
+      left: calc((104px / 2) - 12px);
+    }
+
+    &:not(:last-child)::after {
       left: calc((104px / 2) - 2px);
     }
   }
@@ -49,7 +59,7 @@ const TitleDate = styled.p`
 const TextDate = styled.p`
   display: block;
   color: black;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   word-break: break-word;
 `
 export const DateBlock = ({ date, title, text, children }) => {
