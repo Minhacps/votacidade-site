@@ -120,27 +120,27 @@ export const UpperFooter = ({
           </Title>
             <Row className="align-items-center">
               {supporters
-              .sort(alfabeticOrder('nome'))
-              .map(supporter => {
-                return (
-                  <Col
-                    key={supporter.nome}
-                    xs="6"
-                    sm="4"
-                    lg="2"
-                    className="mb-3"
-                  >
-                    <LinkLogo tag="a" href={supporter.link}>
-                      <img
-                        src={supporter.logo}
-                        alt={`Logotipo ${supporter.nome}`}
-                        title={supporter.nome}
-                        className="img-fluid d-block mx-auto"
-                      />
-                    </LinkLogo>
-                  </Col>
-                )
-              })}
+                .sort(alfabeticOrder('nome'))
+                .map(supporter => {
+                  return (
+                    <Col
+                      key={supporter.nome}
+                      xs="6"
+                      sm="4"
+                      lg="2"
+                      className="mb-3"
+                    >
+                      <LinkLogo tag="a" href={supporter.link}>
+                        <img
+                          src={supporter.logo}
+                          alt={`Logotipo ${supporter.nome}`}
+                          title={supporter.nome}
+                          className="img-fluid d-block mx-auto"
+                        />
+                      </LinkLogo>
+                    </Col>
+                  )
+                })}
             </Row>
           </Col>
         </Row>
