@@ -11,6 +11,24 @@ import { getColor } from "../../../utils/styles"
 
 const StyledFooter = styled.div`
   background-color: ${getColor};
+
+  .realizacao .realizador {
+    flex-basis: 50%;
+    flex-grow: 0;
+
+    @media (min-width: 600px) {
+      flex-basis: 33%;
+    }
+
+    @media (min-width: 992px) {
+      flex-basis: 20%;
+    }
+
+    @media (min-width: 1200px) {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
 `
 
 const StyledButton = styled(Button)`
@@ -37,7 +55,7 @@ const Contato = ({ cidade, contato }, index) => (
 )
 
 const Partnership = (partner, index) => (
-  <Col key={`partner-${index}`} xs="4" sm="3" md="2" className="mb-3">
+  <Col key={`partner-${index}`} className="realizador mb-3">
     <LinkLogo tag="a" href={partner.link}>
       <img
         src={partner.logo}
@@ -85,13 +103,13 @@ export const UpperFooter = ({
       <hr />
 
       <Row>
-        <Col xs="12" lg="10">
+        <Col xs="12">
           <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">
             Realização
           </Title>
-          <Row className="align-items-center">{makers.map(Partnership)}</Row>
+          <Row className="align-items-center realizacao">{makers.map(Partnership)}</Row>
         </Col>
-        <Col xs="12" lg="2">
+        <Col xs="12">
           <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">
             Apoio
           </Title>
@@ -100,10 +118,9 @@ export const UpperFooter = ({
               return (
                 <Col
                   key={supporter.nome}
-                  xs="4"
-                  sm="3"
-                  md="2"
-                  lg="12"
+                  xs="6"
+                  sm="4"
+                  lg="2"
                   className="mb-3"
                 >
                   <LinkLogo tag="a" href={supporter.link}>

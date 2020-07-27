@@ -19,7 +19,7 @@ const CidadesCard = (cidade, index, cidades) => {
                     image={cidade.image}
                     linkTo={cidade.linkTo}
                 >
-                    <Button color="transparent" style={{ fontWeight: 800 }}>APOIE!</Button>
+                    <Button color="transparent" style={{ fontWeight: 800 }}>DOE!</Button>
                 </Card>
             </Link>
         </Col>

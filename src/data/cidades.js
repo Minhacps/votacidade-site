@@ -2,7 +2,7 @@ export const cidades = [
   {
     title: 'Campinas',
     image: require('../images/photos_city/campinas-fundo.jpg'),
-    linkTo: 'https://www.minhacampinas.org.br/#block-6218',
+    linkTo: 'https://www.eufaco.minhacampinas.org.br',
   },
   {
     title: 'João Pessoa',
