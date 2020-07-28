@@ -37,7 +37,7 @@ const StyledLink = styled(NavLink)`
   }
 `
 
-const ExternalLink = styled.a`
+const ExternalLink = styled(NavLink)`
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
@@ -55,10 +55,6 @@ const ExternalLink = styled.a`
     color: ${({ theme }) => theme.primaryColor} !important;
     text-decoration: none;
   }   
-
-  @media (max-width: 800px){
-    margin-top: 30px;
-  }
   
 `
 
@@ -77,15 +73,15 @@ export const Menu = () => {
           </NavItem>
         )
       })}
-      <NavItem className="mt-2">
+      <NavItem>
         <ExternalLink
           rel="noopener noreferrer" target="_blank"
           href="https://drive.google.com/drive/folders/1xQh5dm-XkmQL_deO9sRueERMYpHoCj2a?usp=sharing"
           activeClassName="active"
-        >Midia Kit
+        >Mídia Kit
         </ExternalLink>
       </NavItem>
-      <NavItem className="mt-2">
+      <NavItem >
         <ExternalLink
           target="_blank"
           rel="noopener noreferrer"
