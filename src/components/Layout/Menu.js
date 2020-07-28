@@ -79,8 +79,7 @@ export const Menu = () => {
       })}
       <NavItem className="mt-2">
         <ExternalLink
-          target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer" target="_blank"
           href="https://drive.google.com/drive/folders/1xQh5dm-XkmQL_deO9sRueERMYpHoCj2a?usp=sharing"
           activeClassName="active"
         >Midia Kit

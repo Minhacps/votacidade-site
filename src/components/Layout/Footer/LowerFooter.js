@@ -35,21 +35,18 @@ export const LowerFooter = () => (
   <StyledFooter color="#4F1778" className="py-3 py-md-4">
     <Container>
       <Row>
-        <Col className="col-12 col-md">
+        <Col xs="12" lg="3">
           <ul className="list-unstyled text-small">
             <li>
               <StyledLink to="/privacidade">Política de Privacidade</StyledLink>
             </li>
-            <li>
-              <StyledLink to="/politica-de-cookies">Política de Cookies</StyledLink>
-            </li>
           </ul>
         </Col>
-        <Col className="col-12 col-md">
+        <Col xs="12" lg="9" className="d-lg-flex justify-content-end">
           <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
             <img alt="Licença Creative Commons" style={{ borderWidth: '0' }} src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
           </a>
-          <small className="mt-1 d-block">
+          <small className="d-block mt-1 ml-lg-2">
             Este trabalho está licenciado sob uma <StyledAnchor rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/">Licença Creative Commons Attribution 4.0 International</StyledAnchor>
           </small>
         </Col>
