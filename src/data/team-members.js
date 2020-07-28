@@ -85,11 +85,6 @@ export const teamMembers = [
         role: 'Minha Jampa',
     },
     {
-        name: 'Patrícia Areias',
-        photo: require('../images/photos_team/PatriciaAreias.png'),
-        role: 'IFSP',
-    },
-    {
         name: 'Silvia Octaviano',
         photo: require('../images/photos_team/SilviaOctaviano.png'),
         role: 'Minha Campinas',
