@@ -54,6 +54,7 @@ const ExternalLink = styled.a`
   
   &:hover {
     color: ${({ theme }) => theme.darkGray} !important;
+    text-decoration: none;
   }
 `
 
@@ -74,9 +75,18 @@ export const Menu = () => {
       })}
       <NavItem>
         <ExternalLink
+          rel="noopener noreferrer" target="_blank"
           href="https://drive.google.com/drive/folders/1xQh5dm-XkmQL_deO9sRueERMYpHoCj2a?usp=sharing"
           activeClassName="active"
         >Midia Kit
+        </ExternalLink>
+      </NavItem>
+      <NavItem>
+        <ExternalLink
+          rel="noopener noreferrer" target="_blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfFORbjA5LqCB9xPoj1tXyZmCNv_-Zx_ZwW8KW06BS8cSrpVg/viewform?usp=sf_link"
+          activeClassName="active"
+        >Seja Voluntário
         </ExternalLink>
       </NavItem>
     </Nav>
