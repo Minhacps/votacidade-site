@@ -8,6 +8,7 @@ import { Title } from "../../Title"
 import { Button } from "../../Button"
 
 import { getColor } from "../../../utils/styles"
+import { alfabeticOrder } from '../../../utils/helper';
 
 const StyledFooter = styled.div`
   background-color: ${getColor};
@@ -72,71 +73,77 @@ export const UpperFooter = ({
   makers = [],
   supporters = [],
 }) => (
-  <StyledFooter className="py-3">
-    <Container>
-      <Row className="mt-3">
-        <Col xs="12" lg="6">
-          <Title tag="h4" size="1.1em" color="secondaryColor">
-            Contato
+    <StyledFooter className="py-3">
+      <Container>
+        <Row className="mt-3">
+          <Col xs="12" lg="6">
+            <Title tag="h4" size="1.1em" color="secondaryColor">
+              Contato
           </Title>
-          <ListaDeContato>{contatos.map(Contato)}</ListaDeContato>
-        </Col>
+            <ListaDeContato>{contatos.map(Contato)}</ListaDeContato>
+          </Col>
 
-        <Col xs="12" lg="6">
-          <Title tag="h4" size="1.1em" color="secondaryColor">
-            Apoie o projeto!
+          <Col xs="12" lg="6">
+            <Title tag="h4" size="1.1em" color="secondaryColor">
+              Apoie o projeto!
           </Title>
-          <p style={{ color: "#fff" }}>
-            O Vota Cidade foi idealizado por cinco cidades da Rede Nossas
-            Cidades, organizações sem fins lucrativos, que tem por objetivo
-            fortalecer e incentivar a cultura da participação em questões
-            públicas.
+            <p style={{ color: "#fff" }}>
+              O Vota Cidade foi idealizado por cinco cidades da Rede Nossas
+              Cidades, organizações sem fins lucrativos, que tem por objetivo
+              fortalecer e incentivar a cultura da participação em questões
+              públicas.
           </p>
-          <Link to="/o-projeto">
-            <StyledButton bold light size="lg" color="secondaryColor">
-              Saiba Mais
+            <Link to="/o-projeto">
+              <StyledButton bold light size="lg" color="secondaryColor">
+                Saiba Mais
             </StyledButton>
-          </Link>
-        </Col>
-      </Row>
+            </Link>
+          </Col>
+        </Row>
 
-      <hr />
+        <hr />
 
-      <Row>
-        <Col xs="12">
-          <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">
-            Realização
+        <Row>
+          <Col xs="12">
+            <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">
+              Realização
           </Title>
-          <Row className="align-items-center realizacao">{makers.map(Partnership)}</Row>
-        </Col>
-        <Col xs="12">
-          <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">
-            Apoio
+            <Row className="align-items-center realizacao">
+              {makers
+                .sort(alfabeticOrder('nome'))
+                .map(Partnership)}
+            </Row>
+          </Col>
+          <Col xs="12">
+            <Title tag="h4" size="1.1em" color="secondaryColor" className="mb-3">
+              Apoio
           </Title>
-          <Row className="align-items-center">
-            {supporters.map(supporter => {
-              return (
-                <Col
-                  key={supporter}
-                  xs="6"
-                  sm="4"
-                  lg="2"
-                  className="mb-3"
-                >
-                  <LinkLogo tag="a" href={supporter.link}>
-                    <img
-                      src={supporter.logo}
-                      alt={`Logotipo ${supporter.nome}`}
-                      title={supporter.nome}
-                      className="img-fluid d-block mx-auto"
-                    />
-                  </LinkLogo>
-                </Col>
-              )
-            })}
-          </Row>
-        </Col>
-      </Row>
-    </Container>
-  </StyledFooter>
-)
+            <Row className="align-items-center">
+              {supporters
+                .sort(alfabeticOrder('nome'))
+                .map(supporter => {
+                  return (
+                    <Col
+                      key={supporter.nome}
+                      xs="6"
+                      sm="4"
+                      lg="2"
+                      className="mb-3"
+                    >
+                      <LinkLogo tag="a" href={supporter.link}>
+                        <img
+                          src={supporter.logo}
+                          alt={`Logotipo ${supporter.nome}`}
+                          title={supporter.nome}
+                          className="img-fluid d-block mx-auto"
+                        />
+                      </LinkLogo>
+                    </Col>
+                  )
+                })}
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+    </StyledFooter>
+  )
