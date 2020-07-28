@@ -29,6 +29,7 @@ const StyledLink = styled(NavLink)`
 
   &.active {
     color: ${({ theme }) => theme.primaryColor} !important;
+    border-bottom: 4px solid ${({ theme }) => theme.primaryColor} !important;
   }
   
   &:hover {
@@ -40,8 +41,6 @@ const ExternalLink = styled.a`
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
-  
-  vertical-align:middle;
   color: ${({ theme }) => theme.darkGray} !important;
 
   .nav-item:not(:last-child) & {
@@ -53,8 +52,14 @@ const ExternalLink = styled.a`
   }
   
   &:hover {
-    color: ${({ theme }) => theme.darkGray} !important;
+    color: ${({ theme }) => theme.primaryColor} !important;
+    text-decoration: none;
+  }   
+
+  @media (max-width: 800px){
+    margin-top: 30px;
   }
+  
 `
 
 export const Menu = () => {
@@ -72,13 +77,25 @@ export const Menu = () => {
           </NavItem>
         )
       })}
-      <NavItem>
+      <NavItem className="mt-2">
         <ExternalLink
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://drive.google.com/drive/folders/1xQh5dm-XkmQL_deO9sRueERMYpHoCj2a?usp=sharing"
           activeClassName="active"
         >Midia Kit
         </ExternalLink>
       </NavItem>
+      <NavItem className="mt-2">
+        <ExternalLink
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfFORbjA5LqCB9xPoj1tXyZmCNv_-Zx_ZwW8KW06BS8cSrpVg/viewform?usp=sf_link"
+          activeClassName="active"
+        >Seja Voluntário
+        </ExternalLink>
+      </NavItem>
     </Nav>
+
   )
 }
