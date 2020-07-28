@@ -77,74 +77,68 @@ export const CTAEmail = ({ title, subtitle }) => {
   return (
     <Container>
       <Row>
-        <Col lg={{ size: 8, offset: 2 }} className="text-center mt-5 mb-4">
+        <Col xs="12" className="text-center mt-5 mb-4">
           {title && <Title tag="h1" weight="800" size="2.5rem">{title}</Title>}
           {subtitle && <Title tag="h3" color="darkGray" className="h4">{subtitle}</Title>}
         </Col>
       </Row>
 
       <Row>
-        <Col lg={{ size: 10, offset: 1 }}>
+        <Col xs="auto" md="12">
           <Form target="_blank" method="POST" action="https://gmail.us10.list-manage.com/subscribe/post?u=145b9e413ba4cf4f138b21c21&amp;id=956113fd98" onSubmit={submit}>
-            <Row className="flex-column-reverse">
-              <Col>
-                <FormGroup row>
-                  <Col>
-                    <FormGroup check>
-                      <ReactstrapInput style={{
-                        transform: 'scale(1.7) translateY(-2px)',
-                        transformOrigin: 'left'
-                      }} name="CANDIDATO" type="checkbox" onChange={setInfo} id="candidato" />{' '}
-                      <Label check for="candidato" className="ml-3">
-                        Sou pré-candidato(a) e gostaria de receber mais informações
-                      </Label>
-                    </FormGroup>
-                    <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" />
-                  </Col>
-                </FormGroup>
+            <FormGroup row className="justify-content-center">
+              <Col lg={5}>
+                <Label for="email" hidden>E-mail</Label>
+                <Input
+                  errors={errors}
+                  invalid={!!errors.EMAIL}
+                  onChange={setInfo}
+                  type="mail"
+                  name="EMAIL"
+                  placeholder="Digite seu e-mail"
+                  bsSize="lg"
+                  id="email"
+                />
               </Col>
-              <Col>
-                <FormGroup row>
-                  <Label for="email" hidden>E-mail</Label>
-                  <Col lg={5}>
-                    <Input
-                      errors={errors}
-                      invalid={!!errors.EMAIL}
-                      onChange={setInfo}
-                      type="mail"
-                      name="EMAIL"
-                      placeholder="Digite seu e-mail"
-                      bsSize="lg"
-                      id="email"
-                    />
-                  </Col>
 
-                  <Label for="city" hidden>Cidade</Label>
-                  <Col lg={4}>
-                    <Input 
-                      errors={errors}
-                      invalid={!!errors.CIDADE}
-                      onChange={setInfo}
-                      type="select"
-                      name="CIDADE"
-                      bsSize="lg"
-                      id="city"
-                    >
-                      <option value="">Selecione sua cidade</option>
-                      <option>Campina Grande (PB)</option>
-                      <option>Campinas (SP)</option>
-                      <option>João Pessoa (PB)</option>
-                      <option>Porto Alegre (RS)</option>
-                      <option>Recife (PE)</option>
-                    </Input>
-                  </Col>
-
-                  <Col lg="3">
-                    <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
-                  </Col>
-                </FormGroup>
+              <Col lg={4}>
+                <Label for="city" hidden>Cidade</Label>
+                <Input
+                  errors={errors}
+                  invalid={!!errors.CIDADE}
+                  onChange={setInfo}
+                  type="select"
+                  name="CIDADE"
+                  bsSize="lg"
+                  id="city"
+                >
+                  <option value="">Selecione sua cidade</option>
+                  <option>Campina Grande (PB)</option>
+                  <option>Campinas (SP)</option>
+                  <option>João Pessoa (PB)</option>
+                  <option>Porto Alegre (RS)</option>
+                  <option>Recife (PE)</option>
+                </Input>
               </Col>
-            </Row>
+            </FormGroup>
+
+            <FormGroup row className="justify-content-center">
+              <Col lg="6" className="mb-4 mb-lg-0">
+                <FormGroup check>
+                  <ReactstrapInput style={{
+                    transform: 'scale(1.7) translateY(-2px)',
+                    transformOrigin: 'left'
+                  }} name="CANDIDATO" type="checkbox" onChange={setInfo} id="candidato" />{' '}
+                  <Label check for="candidato" className="ml-3">
+                    Sou pré-candidato(a) e gostaria de receber mais informações
+                  </Label>
+                </FormGroup>
+                <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" />
+              </Col>
+              <Col lg="3">
+                <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
+              </Col>
+            </FormGroup>
           </Form>
         </Col>
       </Row>
