@@ -85,7 +85,7 @@ export const Menu = () => {
         <ExternalLink
           target="_blank"
           rel="noopener noreferrer"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfFORbjA5LqCB9xPoj1tXyZmCNv_-Zx_ZwW8KW06BS8cSrpVg/viewform?usp=sf_link"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfFORbjA5LqCB9xPoj1tXyZmCNv_-Zx_ZwW8KW06BS8cSrpVg/viewform"
           activeClassName="active"
         >Seja Voluntário
         </ExternalLink>
