@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import ogImage from '../images/votacidadefb.png';
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -19,6 +20,9 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
+            facebookAppId
+            ogImageType
           }
         }
       }
@@ -40,8 +44,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `fb:app_id`,
+          content: site.siteMetadata.facebookAppId,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -50,6 +58,22 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          property: `og:image`,
+          content: `${site.siteMetadata.siteUrl}${ogImage}`,
+        },
+        {
+          property: `og:image:alt`,
+          content: metaDescription,
+        },
+        {
+          property: `og:image:type`,
+          content: site.siteMetadata.ogImageType,
         },
         {
           name: `twitter:card`,

@@ -3,17 +3,16 @@ import styled from 'styled-components';
 
 import { Button as BootButton } from 'reactstrap';
 
-const getColor = ({ theme, color }) => {
-  const colorOptions = Object.keys(theme);
-  const themeColorKey = colorOptions.find(colorOption => colorOption === color);
-  return themeColorKey ? theme[themeColorKey] : '';
-}
+import { getColor } from '../utils/styles'
 
-const StyledButton = styled(BootButton)`
+const StyledButton = styled(({ light, bold, ...props }) => <BootButton {...props} />)`
   background-color: ${getColor};
   transition: filter .2s;
   will-change: filter, color;
   color: ${props => props.light ? props.theme.darkGray : '#fff'};
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: ${props => props.bold ? 800 : 400 };
   
   &:hover {
     color: ${props => props.light ? props.theme.darkGray : '#fff'};
@@ -21,6 +20,6 @@ const StyledButton = styled(BootButton)`
   }
 `
 
-export const Button = ({ color = 'primaryColor', children, ...props }) => (
-  <StyledButton color={color} {...props}>{children}</StyledButton>
+export const Button = ({ children, ...props }) => (
+  <StyledButton {...props}>{children}</StyledButton>
 );
