@@ -89,5 +89,20 @@ export const teamMembers = [
         photo: require('../images/photos_team/SilviaOctaviano.png'),
         role: 'Minha Campinas',
     },
+    {
+        name: 'Joelma Santos',
+        photo: require('../images/photos_team/JoelmaSantos.jpeg'),
+        role: 'Meu Recife',
+    },
+    {
+        name: 'Julia de Paula',
+        photo: require('../images/photos_team/JuliadePaula.jpeg'),
+        role: 'Meu Recife',
+    },
+    {
+        name: 'Gabriel Sá',
+        photo: require('../images/photos_team/GabrielSa.jpeg'),
+        role: 'Meu Recife',
+    },
 
 ]
