@@ -3,7 +3,6 @@ import { Col } from 'reactstrap';
 
 import Card from './Card';
 import { Link } from './Link';
-import { Button } from './Button';
 
 const CidadesApp = (cidade, index, cidades) => {
     const isFirst = index === 0;
