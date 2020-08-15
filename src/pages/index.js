@@ -35,7 +35,7 @@ const StyledHeader = styled.header`
 `
 
 const CidadesWrapper = styled.section`
-  background-color: ${({ theme }) => theme.lightSecondary};
+  /* background-color: ${({ theme }) => theme.lightSecondary}; */
   margin-bottom: 40px;
 
   .cidades-wrapper {
@@ -50,13 +50,16 @@ const CidadesWrapper = styled.section`
 const IndexPage = () => (
   <Layout>
     <SEO title="Inicial" />
-    <StyledHeader>
+    <StyledHeader className="pt-5 pb-5">
       <CidadesWrapper>
         <Container>
-          <GroupTitle
-            subTitle="Selecione o munícipio onde você vai votar."
-            className="mt-3 mb-5"
-          />
+          <Title 
+            tag="h1" 
+            weight="700" 
+            size="2.5rem"
+            className="mt-4 mb-4 text-center"
+          >Selecione o munícipio onde você vai votar!
+          </Title>
           <Row
             className="cidades-wrapper mt-3"
             xs="2"
@@ -64,6 +67,7 @@ const IndexPage = () => (
             md="4"
             lg="5"
             noGutters
+
           >
             {cidades.sort(alfabeticOrder("title")).map(CidadesApp)}
           </Row>
