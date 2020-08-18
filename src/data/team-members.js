@@ -109,5 +109,10 @@ export const teamMembers = [
         photo: require('../images/photos_team/GessicaDeFreitas.png'),
         role: 'Minha Campinas',
     },
+    {
+        name: 'Soso',
+        photo: require('../images/photos_team/Soso.png'),
+        role: 'Meu Porto Alegre',
+    },
 
 ]
