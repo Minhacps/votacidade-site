@@ -19,9 +19,9 @@ export const cidades = [
     image: require('../images/photos_city/recife-fundo.jpg'),
     linkTo: 'https://www.meurecife.org.br/#block-4456',
   },
-  {
-    title: 'Campina Grande',
-    image: require('../images/photos_city/campina-grande-fundo.jpg'),
-    linkTo: 'https://www.facebook.com/MinhaCampinaRNC/',
-  },
+  // {
+  //   title: 'Campina Grande',
+  //   image: require('../images/photos_city/campina-grande-fundo.jpg'),
+  //   linkTo: 'https://www.facebook.com/MinhaCampinaRNC/',
+  // },
 ]
