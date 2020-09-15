@@ -113,7 +113,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                   id="city"
                 >
                   <option value="">Selecione sua cidade</option>
-                  <option>Campina Grande (PB)</option>
+                  {/* <option>Campina Grande (PB)</option> */}
                   <option>Campinas (SP)</option>
                   <option>João Pessoa (PB)</option>
                   <option>Porto Alegre (RS)</option>
