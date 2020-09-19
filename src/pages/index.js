@@ -9,6 +9,7 @@ import GroupTitle from '../components/GroupTitle'
 import { Title } from '../components/Title'
 import { Layout } from "../components/Layout"
 import { CTAEmail } from "../components/CTAEmail"
+import { Button } from '../components/Button'
 
 import SEO from "../components/seo"
 
@@ -18,21 +19,35 @@ const StyledCard = styled(Card)`
 `
 
 const StyledHeader = styled.header`
-  background-color: ${({theme}) => theme.lightSecondary};
+  background-color: ${({ theme }) => theme.lightSecondary};
   background-image: url(${require('../images/pattern-alto.png')});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+`
+const StyledButton = styled(Button)`
+  max-width: 300px;
 `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Inicial" />
     <StyledHeader className="pt-5 pb-5">
-      <CTAEmail
-        title='Inscreva-se e saiba em primeira mão do lançamento!'
-        subtitle="Nosso projeto está crescendo e esse ano estaremos em 5 cidades!"
-      />
+      <Container>
+        <Row>
+          <Title className="mx-auto">Conheça o Vota Cidade. O site que te ajuda a escolher seu candidato(a) a vereador(a)</Title>
+        </Row>
+        <Row>
+          <div className="mx-auto">
+            <a href="https://app.vota.org.br">
+              <StyledButton block light bold size="lg" color="secondaryColor" name="subscribe" >CANDIDATO(A) CLIQUE AQUI</StyledButton>
+            </a>
+          </div>
+        </Row>
+        <CTAEmail
+          subtitle="Eleitores/as inscreva-se e saiba em primeira mão do lançamento!"
+        />
+      </Container>
     </StyledHeader>
     <Container className="py-5">
       <GroupTitle
@@ -79,7 +94,7 @@ const IndexPage = () => (
         </Col>
       </Row>
     </Container>
-  </Layout>
+  </Layout >
 )
 
 export default IndexPage

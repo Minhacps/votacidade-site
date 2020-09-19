@@ -100,8 +100,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                   id="email"
                 />
               </Col>
-
-              <Col lg={4}>
+              <Col lg={3}>
                 <Label for="city" hidden>Cidade</Label>
                 <Input
                   errors={errors}
@@ -120,11 +119,8 @@ export const CTAEmail = ({ title, subtitle }) => {
                   <option>Recife (PE)</option>
                 </Input>
               </Col>
-            </FormGroup>
-
-            <FormGroup row className="justify-content-center">
-              <Col lg="6" className="mb-4 mb-lg-0">
-                <FormGroup check>
+              {/* <Col lg={3} className="mb-4 mb-lg-0">
+                {/* <FormGroup check>
                   <ReactstrapInput style={{
                     transform: 'scale(1.7) translateY(-2px)',
                     transformOrigin: 'left'
@@ -133,9 +129,9 @@ export const CTAEmail = ({ title, subtitle }) => {
                     Sou pré-candidato(a) e gostaria de receber mais informações
                   </Label>
                 </FormGroup>
-                <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" />
-              </Col>
-              <Col lg="3">
+                <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" /> 
+              </Col> */} 
+              <Col lg={3}>
                 <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
               </Col>
             </FormGroup>
