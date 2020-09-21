@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Container, Row, Col, Form, FormGroup, Label, Input as ReactstrapInput } from 'reactstrap'
+import { Container, Row, Col, Form, FormGroup, Label} from 'reactstrap'
 
 import { Button } from '../components/Button'
 import { isEmailValid, isRequiredField } from '../utils/helper'

@@ -24,6 +24,7 @@ const StyledHeader = styled.header`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: auto;
 `
 const StyledButton = styled(Button)`
   max-width: 300px;
@@ -35,17 +36,31 @@ const IndexPage = () => (
     <StyledHeader className="pt-5 pb-5">
       <Container>
         <Row>
-          <Title className="mx-auto">Conheça o Vota Cidade. O site que te ajuda a escolher seu candidato(a) a vereador(a)</Title>
+          <Col xs="12" className="text-center mb-1">
+            <Title className="mx-auto">Vota Cidade</Title>
+          </Col>
         </Row>
         <Row>
-          <div className="mx-auto">
-            <a href="https://app.vota.org.br">
-              <StyledButton block light bold size="lg" color="secondaryColor" name="subscribe" >CANDIDATO(A) CLIQUE AQUI</StyledButton>
-            </a>
-          </div>
+          <Col xs="12" className="text-center mt-1">
+            <Title className="mx-auto">O site que te ajuda a escolher seu candidato(a) a vereador(a)</Title>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" className="text-center mt-3 mb-2">
+            <Title tag="h3" color="darkGray" className="h4">É candidato(a) a vereador(a) nas cidades participantes? Responda às afirmações e garanta sua participação agora!</Title>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div className="mx-auto">
+              <a href="https://app.vota.org.br">
+                <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit" style={{maxWidth: "500px", margin: "auto"}}>PARTICIPE AGORA</Button>
+              </a>
+            </div>
+          </Col>
         </Row>
         <CTAEmail
-          subtitle="Eleitores/as inscreva-se e saiba em primeira mão do lançamento!"
+          subtitle="É eleitor(a) nas cidades participantes? Inscreva-se para ser avisado quando o match com candidatos(as) estará disponível!"
         />
       </Container>
     </StyledHeader>
