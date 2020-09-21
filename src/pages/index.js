@@ -34,12 +34,12 @@ const IndexPage = () => (
       <Container>
         <Row>
           <Col xs="12" className="text-center mb-1">
-            <Title className="mx-auto">Vota Cidade</Title>
+            <Title tag='h1' className="mx-auto">Vota Cidade</Title>
           </Col>
         </Row>
         <Row>
           <Col xs="12" className="text-center mt-1">
-            <Title className="mx-auto">O site que te ajuda a escolher seu candidato(a) a vereador(a)</Title>
+            <Title tag='h1' className="mx-auto">O site que te ajuda a escolher seu candidato(a) a vereador(a)</Title>
           </Col>
         </Row>
         <Row>
@@ -51,7 +51,7 @@ const IndexPage = () => (
           <Col>
             <div className="mx-auto">
               <a href="https://app.vota.org.br">
-                <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit" style={{maxWidth: "500px", margin: "auto"}}>PARTICIPE AGORA</Button>
+                <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit" style={{maxWidth: "640px", margin: "auto"}}>PARTICIPE AGORA</Button>
               </a>
             </div>
           </Col>
