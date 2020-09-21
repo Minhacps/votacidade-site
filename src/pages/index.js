@@ -26,9 +26,6 @@ const StyledHeader = styled.header`
   background-repeat: no-repeat;
   margin: auto;
 `
-const StyledButton = styled(Button)`
-  max-width: 300px;
-`
 
 const IndexPage = () => (
   <Layout>
