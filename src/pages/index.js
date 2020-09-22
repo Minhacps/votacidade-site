@@ -9,6 +9,7 @@ import GroupTitle from '../components/GroupTitle'
 import { Title } from '../components/Title'
 import { Layout } from "../components/Layout"
 import { CTAEmail } from "../components/CTAEmail"
+import { Button } from '../components/Button'
 
 import SEO from "../components/seo"
 
@@ -18,21 +19,47 @@ const StyledCard = styled(Card)`
 `
 
 const StyledHeader = styled.header`
-  background-color: ${({theme}) => theme.lightSecondary};
+  background-color: ${({ theme }) => theme.lightSecondary};
   background-image: url(${require('../images/pattern-alto.png')});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: auto;
 `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Inicial" />
     <StyledHeader className="pt-5 pb-5">
-      <CTAEmail
-        title='Inscreva-se e saiba em primeira mão do lançamento!'
-        subtitle="Nosso projeto está crescendo e esse ano estaremos em 5 cidades!"
-      />
+      <Container>
+        <Row>
+          <Col xs="12" className="text-center mb-1">
+            <Title tag='h1' className="mx-auto">Vota Cidade</Title>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" className="text-center mt-1">
+            <Title tag='h1' className="mx-auto">O site que te ajuda a escolher seu candidato(a) a vereador(a)</Title>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" className="text-center mt-3 mb-2">
+            <Title tag="h3" color="darkGray" className="h4">É candidato(a) a vereador(a) nas cidades participantes? Responda às afirmações e garanta sua participação agora!</Title>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div className="mx-auto">
+              <a href="https://app.vota.org.br">
+                <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit" style={{maxWidth: "640px", margin: "auto"}}>PARTICIPE AGORA</Button>
+              </a>
+            </div>
+          </Col>
+        </Row>
+        <CTAEmail
+          subtitle="É eleitor(a) nas cidades participantes? Inscreva-se para ser avisado quando o match com candidatos(as) estará disponível!"
+        />
+      </Container>
     </StyledHeader>
     <Container className="py-5">
       <GroupTitle
@@ -79,7 +106,7 @@ const IndexPage = () => (
         </Col>
       </Row>
     </Container>
-  </Layout>
+  </Layout >
 )
 
 export default IndexPage
