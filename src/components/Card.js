@@ -32,9 +32,11 @@ const StyledCard = styled.div`
   }
 `
 
-const Card = ({ title, children, ...props }) => (
+const Card = ({ title, subTitle, children, ...props }) => (
   <StyledCard {...props}>
     {title && <Title tag="h4" color="#fff" style={{ zIndex: 1 }}>{title}</Title>}
+    {subTitle && <Title tag="h5" color="#fff" style={{ zIndex: 1 }}>{subTitle}</Title>}
+    {children}
     {children}
   </StyledCard>
 )

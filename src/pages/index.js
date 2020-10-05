@@ -56,13 +56,17 @@ const IndexPage = () => (
     <StyledHeader className="pt-5 pb-5">
       <CidadesWrapper>
         <Container>
-          <Title 
-            tag="h1" 
-            weight="700" 
+          <Title
+            tag="h1"
+            weight="700"
             size="2.5rem"
             className="mt-4 mb-4 text-center"
-          >Selecione o munícipio onde você vai votar!
+          >O site que te ajuda a escolher o seu candidato(a) a veredor(a)
           </Title>
+          <Col xs="12" className="text-center mt-3 mb-2">
+
+            <Title tag="h3" color="darkGray" className="h4">Veja se a sua cidade já está disponível.</Title>
+          </Col>
           <Row
             className="cidades-wrapper mt-3"
             xs="2"
@@ -96,7 +100,7 @@ const IndexPage = () => (
           <Col>
             <div className="mx-auto">
               <a href="https://app.vota.org.br">
-                <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit" style={{maxWidth: "640px", margin: "auto"}}>PARTICIPE AGORA</Button>
+                <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit" style={{ maxWidth: "640px", margin: "auto" }}>PARTICIPE AGORA</Button>
               </a>
             </div>
           </Col>

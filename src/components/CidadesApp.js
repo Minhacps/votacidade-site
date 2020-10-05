@@ -12,14 +12,26 @@ const CidadesApp = (cidade, index, cidades) => {
 
     return (
         <Col key={cidade.title} className={`${padding} mt-2`}>
-            <Link tag="a" href={cidade.appLink}>
+            {cidade.enableApp ?
+                <Link tag="a" href={cidade.appLink}>
+                    <Card
+                        title={cidade.title}
+                        subTitle={'Começar'}
+                        image={cidade.image}
+                        appLink={cidade.appLink}
+                    >
+                    </Card>
+                </Link>
+                :
                 <Card
                     title={cidade.title}
+                    subTitle={'Pré inscrição'}
                     image={cidade.image}
                     appLink={cidade.appLink}
                 >
                 </Card>
-            </Link>
+            }
+
         </Col>
     )
 }
