@@ -29,9 +29,9 @@ export const makers = [
     logo: require('../images/logo-meu-recife.png'),
     link: 'https://www.meurecife.org.br/'
   },
-  {
-    nome: 'Minha Campina',
-    logo: require('../images/logo-minha-campina.png'),
-    link: 'https://www.facebook.com/MinhaCampinaRNC/'
-  },
+  // {
+  //   nome: 'Minha Campina',
+  //   logo: require('../images/logo-minha-campina.png'),
+  //   link: 'https://www.facebook.com/MinhaCampinaRNC/'
+  // },
 ]
