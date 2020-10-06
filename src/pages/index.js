@@ -18,7 +18,8 @@ import { Layout } from "../components/Layout"
 import { alfabeticOrder } from '../utils/helper';
 import CidadesApp from "../components/CidadesApp";
 import { CTAEmail } from "../components/CTAEmail"
-import { Button } from '../components/Button'
+import { Button } from '../components/Button';
+import PurpleBlock from '../components/PurpleBlock';
 
 import SEO from "../components/seo"
 import { cidades } from '../data';
@@ -61,11 +62,11 @@ const IndexPage = () => (
             weight="700"
             size="2.5rem"
             className="mt-4 mb-4 text-center"
-          >O site que te ajuda a escolher o seu candidato(a) a veredor(a)
+          >O site que te ajuda a escolher seu candidato(a) a vereador(a)
           </Title>
           <Col xs="12" className="text-center mt-3 mb-2">
 
-            <Title tag="h3" color="darkGray" className="h4">Veja se a sua cidade já está disponível.</Title>
+            <Title tag="h3" color="darkGray" className="h4">É eleitor(a) nas cidades participantes? Escolha a sua cidade e veja se já está disponível!</Title>
           </Col>
           <Row
             className="cidades-wrapper mt-3"
@@ -80,7 +81,8 @@ const IndexPage = () => (
           </Row>
         </Container>
       </CidadesWrapper>
-      <Container>
+
+      {/* <Container>
         <Row>
           <Col xs="12" className="text-center mb-1">
             <Title tag='h1' className="mx-auto">Vota Cidade</Title>
@@ -108,8 +110,11 @@ const IndexPage = () => (
         <CTAEmail
           subtitle="É eleitor(a) nas cidades participantes? Inscreva-se para ser avisado quando o match com candidatos(as) estará disponível!"
         />
-      </Container>
+      </Container> */}
     </StyledHeader>
+
+    <PurpleBlock />
+
     <Container className="py-5">
       <GroupTitle
         title="como funciona"
