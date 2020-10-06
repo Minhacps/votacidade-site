@@ -4,7 +4,7 @@ export const cidades = [
     state: 'SP',
     image: require('../images/photos_city/campinas-fundo.jpg'),
     imageApp: require('../images/photos_city/Campinas.png'),
-    imageAppPB: require('../images/photos_city/Campinas-pn.png'),
+    imageAppPB: require('../images/photos_city/Campinas-pb.png'),
     linkTo: 'https://www.eufaco.minhacampinas.org.br',
     appLink: 'http://app.vota.org.br/',
     enableApp: true,
