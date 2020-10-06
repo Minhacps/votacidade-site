@@ -87,7 +87,7 @@ export const CTAEmail = ({ title, subtitle }) => {
         <Col xs="auto" md="12">
           <Form target="_blank" method="POST" action="https://gmail.us10.list-manage.com/subscribe/post?u=145b9e413ba4cf4f138b21c21&amp;id=956113fd98" onSubmit={submit}>
             <FormGroup row className="justify-content-center">
-              <Col lg={5}>
+              <Col lg={6}>
                 <Label for="email" hidden>E-mail</Label>
                 <Input
                   errors={errors}
@@ -100,7 +100,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                   id="email"
                 />
               </Col>
-              <Col lg={3}>
+              <Col lg={6}>
                 <Label for="city" hidden>Cidade</Label>
                 <Input
                   errors={errors}
@@ -113,6 +113,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                 >
                   <option value="">Selecione sua cidade</option>
                   {/* <option>Campina Grande (PB)</option> */}
+                  <option>Americana (SP)</option>
                   <option>Campinas (SP)</option>
                   <option>João Pessoa (PB)</option>
                   <option>Porto Alegre (RS)</option>
