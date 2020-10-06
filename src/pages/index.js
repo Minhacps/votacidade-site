@@ -17,8 +17,8 @@ import { Layout } from "../components/Layout"
 // import { CTAEmail } from "../components/CTAEmail"
 import { alfabeticOrder } from '../utils/helper';
 import CidadesApp from "../components/CidadesApp";
-import { CTAEmail } from "../components/CTAEmail"
-import { Button } from '../components/Button';
+
+// import { Button } from '../components/Button';
 import PurpleBlock from '../components/PurpleBlock';
 
 import SEO from "../components/seo"
