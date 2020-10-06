@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Title } from '../components/Title';
 import { Button } from '../components/Button';
+import {Link} from '../components/Link';
+
 import styled from 'styled-components';
 
 const PurpleContainer = styled(Container)`
@@ -19,7 +21,9 @@ const PurpleBlock = () => {
                         <Title tag="h3" color="white " className="h4">É candidato(a) a vereador(a)? Garanta sua participação</Title>
                     </Col>
                     <Col lg={3}>
-                        <Button block bold size="lg" color="primaryColor" style={{border: '2px solid white'}} className="mt-5-md">COMEÇAR</Button>
+                        <Link tag="a" href="https://app.vota.org.br">
+                            <Button block bold size="lg" color="primaryColor" style={{ border: '2px solid white' }} className="mt-5-md">COMEÇAR</Button>
+                        </Link>
                     </Col>
                 </Row>
             </Container>
