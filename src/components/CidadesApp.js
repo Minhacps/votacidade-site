@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col } from 'reactstrap';
+import Modal from '../components/Modal/Modal';
 
 import Card from './Card';
 import { Link } from './Link';
@@ -10,8 +11,12 @@ const CidadesApp = (cidade, index, cidades) => {
     const padding = isFirst ? 'pr-1' :
         isLast ? 'pl-1' : 'px-1'
 
+    const [activeModal, setActiveModal]= useState(false);
+    const toggle = () => setActiveModal(!activeModal);
+
     return (
         <Col key={cidade.title} className={`${padding} mt-2`}>
+            {activeModal ? <Modal city={cidade.title} /> : null}
             {cidade.enableApp ?
                 <Link tag="a" href={cidade.appLink}>
                     <Card
@@ -29,9 +34,11 @@ const CidadesApp = (cidade, index, cidades) => {
                     subTitle={'PRÉ-INSCRIÇÃO'}
                     image={cidade.imageAppPB}
                     appLink={cidade.appLink}
-                    enableApp={cidade.enableApp}
+                    onClick={toggle}
+                    style={{cursor: 'pointer'}}
                 >
                 </Card>
+
             }
 
         </Col>
