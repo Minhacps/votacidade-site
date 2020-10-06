@@ -111,7 +111,7 @@ export const CTAEmail = ({ title, subtitle, city, state }) => {
                   bsSize="lg"
                   id="city"
                 >
-                  <option value="">Selecione {city}</option>
+                  {/* <option value="">Selecione {city}</option> */}
                   <option value={city}>{`${city} (${state})`}</option>
                   {/* <option>Campina Grande (PB)</option> */}
                   {/* <option>Americana (SP)</option>
