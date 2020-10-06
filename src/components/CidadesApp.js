@@ -16,18 +16,20 @@ const CidadesApp = (cidade, index, cidades) => {
                 <Link tag="a" href={cidade.appLink}>
                     <Card
                         title={cidade.title}
-                        subTitle={'Começar'}
-                        image={cidade.image}
+                        subTitle={'COMEÇAR!'}
+                        image={cidade.imageApp}
                         appLink={cidade.appLink}
+                        enableApp={cidade.enableApp}
                     >
                     </Card>
                 </Link>
                 :
                 <Card
                     title={cidade.title}
-                    subTitle={'Pré inscrição'}
-                    image={cidade.image}
+                    subTitle={'PRÉ-INSCRIÇÃO'}
+                    image={cidade.imageAppPB}
                     appLink={cidade.appLink}
+                    enableApp={cidade.enableApp}
                 >
                 </Card>
             }
