@@ -27,16 +27,16 @@ const StyledCard = styled.div`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(0.5) blur(1px);
+    
     ${buildBackgroundImage}
   }
 `
 
-const Card = ({ title, subTitle, children, ...props }) => (
+const Card = ({ title, subTitle, enableApp, children, ...props }) => (
   <StyledCard {...props}>
     {title && <Title tag="h4" color="#fff" style={{ zIndex: 1 }}>{title}</Title>}
-    {subTitle && <Title tag="h5" color="#fff" style={{ zIndex: 1 }}>{subTitle}</Title>}
-    {children}
+    {subTitle && enableApp && <Title tag="h5" color="#fff" style={{ zIndex: 1, marginTop: '24px'}}>{subTitle}</Title>}
+    {subTitle && !enableApp && <Title tag="h5" color="#fff" style={{ zIndex: 1, marginTop: '24px', borderBottom: '8px solid #662D91'}}>{subTitle}</Title>}
     {children}
   </StyledCard>
 )
