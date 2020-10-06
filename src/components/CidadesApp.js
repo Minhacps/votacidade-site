@@ -14,9 +14,9 @@ const CidadesApp = (cidade, index, cidades) => {
     const [activeModal, setActiveModal]= useState(false);
     const toggle = () => setActiveModal(!activeModal);
 
-    return (
+    return ( 
         <Col key={cidade.title} className={`${padding} mt-2`}>
-            {activeModal ? <Modal city={cidade.title} /> : null}
+            {activeModal ? <Modal city={cidade.title} state={cidade.state} /> : null}
             {cidade.enableApp ?
                 <Link tag="a" href={cidade.appLink}>
                     <Card

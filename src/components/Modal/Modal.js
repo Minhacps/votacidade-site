@@ -12,7 +12,7 @@ const ModalExample = (props) => {
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Pré-inscrição - <b>{props.city}</b></ModalHeader>
         <ModalBody>
-          <CTAEmail subtitle="Inscreva-se para ser avisado quando o match com candidatos(as) estará disponível!" />
+          <CTAEmail subtitle="Inscreva-se para ser avisado quando o match com candidatos(as) estará disponível!" city={props.city} state={props.state}/>
         </ModalBody>
         <ModalFooter>
           <Button color="primaryColor" onClick={toggle}>

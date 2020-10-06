@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Container, Row, Col, Form, FormGroup, Label} from 'reactstrap'
+import { Container, Row, Col, Form, FormGroup, Label } from 'reactstrap'
 
 import { Button } from '../components/Button'
 import { isEmailValid, isRequiredField } from '../utils/helper'
@@ -35,7 +35,7 @@ const validators = (name, value, errors) => {
   }
 }
 
-export const CTAEmail = ({ title, subtitle }) => {
+export const CTAEmail = ({ title, subtitle, city, state }) => {
   const [diry, setDirty] = useState(false);
   const [errors, setErrors] = useState({});
   const [contactInfo, setContactInfo] = useState({
@@ -111,13 +111,13 @@ export const CTAEmail = ({ title, subtitle }) => {
                   bsSize="lg"
                   id="city"
                 >
-                  <option value="">Selecione sua cidade</option>
+                  <option value="">Selecione {city}</option>
+                  <option value={city}>{`${city} (${state})`}</option>
                   {/* <option>Campina Grande (PB)</option> */}
-                  <option>Americana (SP)</option>
-                  <option>Campinas (SP)</option>
+                  {/* <option>Americana (SP)</option>
                   <option>João Pessoa (PB)</option>
                   <option>Porto Alegre (RS)</option>
-                  <option>Recife (PE)</option>
+                  <option>Recife (PE)</option> */}
                 </Input>
               </Col>
               {/* <Col lg={3} className="mb-4 mb-lg-0">
@@ -131,7 +131,7 @@ export const CTAEmail = ({ title, subtitle }) => {
                   </Label>
                 </FormGroup>
                 <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" /> 
-              </Col> */} 
+              </Col> */}
               <Col lg={3}>
                 <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
               </Col>
