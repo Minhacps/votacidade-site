@@ -6,17 +6,18 @@ import Card from './Card';
 import { Link } from './Link';
 
 const CidadesApp = (cidade, index, cidades) => {
+    const [modal, setModal] = useState(false);
+
     const isFirst = index === 0;
     const isLast = index === cidades.length - 1;
     const padding = isFirst ? 'pr-1' :
         isLast ? 'pl-1' : 'px-1'
 
-    const [activeModal, setActiveModal]= useState(false);
-    const toggle = () => setActiveModal(!activeModal);
+    const toggle = () => setModal(!modal);
 
     return ( 
         <Col key={cidade.title} className={`${padding} mt-2`}>
-            {activeModal ? <Modal city={cidade.title} state={cidade.state} /> : null}
+            {modal ? <Modal city={cidade.title} state={cidade.state} toggle={toggle} modal={modal}/> : null}
             {cidade.enableApp ?
                 <Link tag="a" href={cidade.appLink}>
                     <Card
@@ -38,9 +39,7 @@ const CidadesApp = (cidade, index, cidades) => {
                     style={{cursor: 'pointer'}}
                 >
                 </Card>
-
             }
-
         </Col>
     )
 }

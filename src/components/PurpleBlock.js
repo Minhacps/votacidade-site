@@ -17,12 +17,12 @@ const PurpleBlock = () => {
         <PurpleContainer fluid>
             <Container>
                 <Row>
-                    <Col lg={8}>
-                        <Title tag="h3" color="white " className="h4">É candidato(a) a vereador(a)? Garanta sua participação</Title>
+                    <Col lg={9}>
+                        <Title tag="h4" color="white " className="h4">É candidato(a) a vereador(a)? Garanta sua participação</Title>
                     </Col>
                     <Col lg={3}>
                         <Link tag="a" href="https://app.vota.org.br" >
-                            <Button block bold size="lg" color="primaryColor" style={{ border: '2px solid white', transform: 'translateY(-15px)' }} className="py-3 mt-xs-3">COMEÇAR</Button>
+                            <Button block bold size="lg" color="primaryColor" style={{ border: '1px solid white', transform: 'translateY(-15px)' }} className="py-2 mt-xs-3 mt-3">COMEÇAR</Button>
                         </Link>
                     </Col>
                 </Row>

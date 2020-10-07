@@ -40,7 +40,7 @@ export const CTAEmail = ({ title, subtitle, city, state }) => {
   const [errors, setErrors] = useState({});
   const [contactInfo, setContactInfo] = useState({
     EMAIL: '',
-    CIDADE: '',
+    CIDADE: city + ' (' + state + ')',
     CANDIDATO: false,
   });
 
@@ -87,7 +87,7 @@ export const CTAEmail = ({ title, subtitle, city, state }) => {
         <Col xs="auto" md="12">
           <Form target="_blank" method="POST" action="https://gmail.us10.list-manage.com/subscribe/post?u=145b9e413ba4cf4f138b21c21&amp;id=956113fd98" onSubmit={submit}>
             <FormGroup row className="justify-content-center">
-              <Col lg={6}>
+              <Col lg={9}>
                 <Label for="email" hidden>E-mail</Label>
                 <Input
                   errors={errors}
@@ -100,38 +100,20 @@ export const CTAEmail = ({ title, subtitle, city, state }) => {
                   id="email"
                 />
               </Col>
-              <Col lg={6}>
-                <Label for="city" hidden>Cidade</Label>
+           
+              <Col>
                 <Input
                   errors={errors}
                   invalid={!!errors.CIDADE}
+                  value={city + ' (' + state + ')'}
                   onChange={setInfo}
-                  type="select"
+                  type="text"
                   name="CIDADE"
                   bsSize="lg"
                   id="city"
-                >
-                  {/* <option value="">Selecione {city}</option> */}
-                  <option value={city}>{`${city} (${state})`}</option>
-                  {/* <option>Campina Grande (PB)</option> */}
-                  {/* <option>Americana (SP)</option>
-                  <option>João Pessoa (PB)</option>
-                  <option>Porto Alegre (RS)</option>
-                  <option>Recife (PE)</option> */}
-                </Input>
+                  style={{display:'none'}}
+                />
               </Col>
-              {/* <Col lg={3} className="mb-4 mb-lg-0">
-                {/* <FormGroup check>
-                  <ReactstrapInput style={{
-                    transform: 'scale(1.7) translateY(-2px)',
-                    transformOrigin: 'left'
-                  }} name="CANDIDATO" type="checkbox" onChange={setInfo} id="candidato" />{' '}
-                  <Label check for="candidato" className="ml-3">
-                    Sou pré-candidato(a) e gostaria de receber mais informações
-                  </Label>
-                </FormGroup>
-                <ReactstrapInput type="hidden" name="b_6f198f953b0c34ee391e4e8bf_e7126f8c48" tabIndex="-1" value="" /> 
-              </Col> */}
               <Col lg={3}>
                 <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit">ENVIAR</Button>
               </Col>

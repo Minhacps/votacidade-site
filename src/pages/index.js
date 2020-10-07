@@ -64,10 +64,6 @@ const IndexPage = () => (
             className="mt-4 mb-4 text-center"
           >O site que te ajuda a escolher seu candidato(a) a vereador(a)
           </Title>
-          <Col xs="12" className="text-center mt-3 mb-2">
-
-            <Title tag="h3" color="darkGray" className="h4">É eleitor(a) nas cidades participantes? Escolha a sua cidade e veja se já está disponível!</Title>
-          </Col>
           <Row
             className="cidades-wrapper mt-3"
             xs="2"
@@ -81,36 +77,6 @@ const IndexPage = () => (
           </Row>
         </Container>
       </CidadesWrapper>
-
-      {/* <Container>
-        <Row>
-          <Col xs="12" className="text-center mb-1">
-            <Title tag='h1' className="mx-auto">Vota Cidade</Title>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12" className="text-center mt-1">
-            <Title tag='h1' className="mx-auto">O site que te ajuda a escolher seu candidato(a) a vereador(a)</Title>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs="12" className="text-center mt-3 mb-2">
-            <Title tag="h3" color="darkGray" className="h4">É candidato(a) a vereador(a) nas cidades participantes? Responda às afirmações e garanta sua participação agora!</Title>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <div className="mx-auto">
-              <a href="https://app.vota.org.br">
-                <Button block light bold size="lg" color="secondaryColor" name="subscribe" type="submit" style={{ maxWidth: "640px", margin: "auto" }}>PARTICIPE AGORA</Button>
-              </a>
-            </div>
-          </Col>
-        </Row>
-        <CTAEmail
-          subtitle="É eleitor(a) nas cidades participantes? Inscreva-se para ser avisado quando o match com candidatos(as) estará disponível!"
-        />
-      </Container> */}
     </StyledHeader>
 
     <PurpleBlock />
@@ -118,7 +84,7 @@ const IndexPage = () => (
     <Container className="py-5">
       <GroupTitle
         title="como funciona"
-        subTitle="Vamos mostrar uma lista de candidatos e candidatas que pensam parecido com você"
+        subTitle="Vamos mostrar uma lista de candidatos(as) que pensam parecido com você"
         className="mt-3 mb-5"
       />
       <Row noGutters>
@@ -163,8 +129,7 @@ const IndexPage = () => (
                 <Title size="24px">Afinidade</Title>
               </CardTitle>
               <CardText>
-                Nós cruzaremos as suas respostas com os candidatos e candidatas
-                cadastradas e te mostraremos quem pensa parecido com você!
+                Nós cruzaremos as suas respostas com os candidatos(as) cadastradas e te mostraremos quem pensa parecido com você!
               </CardText>
             </CardBody>
           </StyledCard>
@@ -186,9 +151,7 @@ const IndexPage = () => (
                 <Title size="24px">Quero mais!</Title>
               </CardTitle>
               <CardText>
-                Você poderá pesquisar e acessar o perfil de qualquer candidato
-                ou candidata cadastrada para ver as respostas, comparar e tomar
-                a sua decisão.
+                Você poderá pesquisar e acessar o perfil de qualquer candidato(a) cadastrada para ver as respostas, comparar e tomar a sua decisão.
               </CardText>
             </CardBody>
           </StyledCard>
@@ -210,8 +173,7 @@ const IndexPage = () => (
                 <Title size="24px">E os dados?</Title>
               </CardTitle>
               <CardText>
-                Nós nos preocupamos e respeitamos muito seus dados e por isso
-                daremos a opção de responder o questionário de forma anônima.
+                Nós nos preocupamos e respeitamos muito seus dados. Veja nossa política de privacidade.
               </CardText>
             </CardBody>
           </StyledCard>
