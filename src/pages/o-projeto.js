@@ -43,7 +43,7 @@ const PageProject = () => {
       <ProjectDetails
         miniTitle={"conheça o projeto"}
         title={"Encontre um candidato que realmente te representa"}
-        text={"O Vota Cidade é uma ferramenta para a população de Campina Grande (PB), Campinas (SP), João Pessoa (PB), Porto Alegre (RS) e Recife (PE) encontrar candidatos(as) a vereador(a) que pensam parecido nas eleições de 2020. O legislativo tem centenas, e até milhares, de candidatos(as), o que dificulta encontrar alguém que realmente represente a diversidade das cidades. Por isso, o Vota cruza as respostas do(a) eleitor(a) com os(as) candidatos(as) cadastrados(as), mostrando a lista por ordem de afinidade em alguns minutos. Assim, você escolhe alguém que pensa parecido e pode cobrar melhor depois!"}
+        text={"O Vota Cidade é uma ferramenta para a população de Campinas (SP), João Pessoa (PB), Porto Alegre (RS) e Recife (PE) encontrar candidatos(as) a vereador(a) que pensam parecido nas eleições de 2020. O legislativo tem centenas, e até milhares, de candidatos(as), o que dificulta encontrar alguém que realmente represente a diversidade das cidades. Por isso, o Vota cruza as respostas do(a) eleitor(a) com os(as) candidatos(as) cadastrados(as), mostrando a lista por ordem de afinidade em alguns minutos. Assim, você escolhe alguém que pensa parecido e pode cobrar melhor depois!"}
       />
       <ProjectDetails
         miniTitle={"ajude o projeto"}
