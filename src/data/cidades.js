@@ -17,7 +17,7 @@ export const cidades = [
     imageAppPB: require('../images/photos_city/Jampa-pb.png'),
     linkTo: 'https://www.minhajampa.org.br/#block-14338',
     appLink: 'https://app.vota.org.br/',
-    enableApp: false,
+    enableApp: true,
   },
   {
     title: 'Porto Alegre',
